@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Net'Toit Renov | Rénovation & Peinture Toiture Martinique - Le Vauclin</title>
+  <meta name="description" content="Net'Toit Renov par Alfred Mouche & Mathias Musset au Vauclin. Rénovation toiture tôle et tuile, résine étanchéité, peinture airless en Martinique. Décennale PROGEAS.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts : Montserrat & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#071e3d',
+              dark: '#030d1a',
+              emerald: '#059669',
+              emeraldLight: '#10b981',
+              cyan: '#0891b2',
+              gold: '#f59e0b',
+              goldDark: '#d97706',
+              coral: '#ea580c'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Avant / Après interactif */
+    .comparison-wrapper {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      touch-action: pan-y;
+    }
+    .comparison-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #ffffff;
+      transform: translateX(-50%);
+      box-shadow: 0 0 16px rgba(0,0,0,0.6);
+      cursor: ew-resize;
+      z-index: 20;
+    }
+    .comparison-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background: #ffffff;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      border: 3px solid #059669;
+      color: #071e3d;
+    }
+    .lightbox-open {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-emerald selection:text-white">
+
+  <!-- Bandeau Légal & Urgence -->
+  <aside aria-label="Informations légales et urgence" class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2.5 px-4 border-b border-white/10 sticky top-0 sm:static z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <span class="inline-flex items-center gap-1.5 text-brand-emeraldLight font-semibold">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+          Garantie Décennale PROGEAS (N° AXRCD220259)
+        </span>
+        <span class="hidden md:inline text-white/30">•</span>
+        <span class="inline-flex items-center gap-1.5 text-slate-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-gold"></i>
+          Le Vauclin & Déplacement toute la Martinique
+        </span>
+        <span class="hidden lg:inline text-white/30">•</span>
+        <span class="hidden lg:inline-flex items-center gap-1.5 text-slate-300">
+          <i data-lucide="users" class="w-3.5 h-3.5 text-brand-cyan"></i>
+          Artisans : Alfred Mouche & Mathias Musset
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:0696890951" class="font-extrabold text-white hover:text-brand-gold transition flex items-center gap-1.5">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-brand-emeraldLight"></i>
+          06 96 89 09 51
+        </a>
+        <a href="https://wa.me/596696890951?text=Bonjour%20Net'Toit%20Renov,%20je%20souhaite%20un%20devis%20gratuit%20pour%20ma%20toiture" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1 shadow-sm transition">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 sticky top-0 sm:top-auto z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo de l'entreprise -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-navy via-slate-900 to-brand-emerald flex items-center justify-center text-white shadow-md shadow-brand-navy/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="home" class="w-6 h-6 text-brand-gold"></i>
+        </div>
+        <div>
+          <span class="text-xl sm:text-2xl font-black tracking-tight text-brand-navy block font-heading leading-tight">
+            NET'TOIT <span class="text-brand-emerald">RENOV</span>
+          </span>
+          <span class="text-[10px] tracking-wider text-slate-500 uppercase font-bold block">
+            Rénovation Toiture Martinique
+          </span>
+        </div>
+      </a>
+
+      <!-- Menu Bureau -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#avant-apres" class="hover:text-brand-emerald transition">Avant / Après</a>
+        <a href="#galerie" class="hover:text-brand-emerald transition">Nos Chantiers</a>
+        <a href="#services" class="hover:text-brand-emerald transition">Prestations</a>
+        <a href="#garantie" class="hover:text-brand-emerald transition">Artisans & Décennale</a>
+        <a href="#simulateur" class="hover:text-brand-emerald transition">Simulateur & Devis</a>
+        <a href="#contact" class="hover:text-brand-emerald transition">Contact</a>
+      </nav>
+
+      <!-- Bouton d'action -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#simulateur" class="bg-gradient-to-r from-brand-gold to-brand-coral hover:from-amber-600 hover:to-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-amber-500/25 transition transform hover:scale-[1.02] active:scale-[0.98]">
+          Devis Gratuit
+        </a>
+      </div>
+
+      <!-- Bouton Hamburger Mobile -->
+      <button id="mobileToggle" aria-label="Menu" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Tiroir Mobile -->
+    <div id="mobileNav" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 shadow-2xl space-y-3">
+      <nav class="flex flex-col gap-2.5 font-bold text-slate-800 text-sm">
+        <a href="#avant-apres" class="mobile-item py-2 border-b border-slate-100">Avant / Après</a>
+        <a href="#galerie" class="mobile-item py-2 border-b border-slate-100">Galerie de Réalisations</a>
+        <a href="#services" class="mobile-item py-2 border-b border-slate-100">Nos Prestations Toiture</a>
+        <a href="#garantie" class="mobile-item py-2 border-b border-slate-100">Artisans & Décennale PROGEAS</a>
+        <a href="#simulateur" class="mobile-item py-2 border-b border-slate-100">Simulateur de Devis en direct</a>
+        <a href="#contact" class="mobile-item py-2">Coordonnées au Vauclin</a>
+      </nav>
+      <div class="pt-3 flex flex-col gap-2">
+        <a href="tel:0696890951" class="w-full text-center bg-brand-navy text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4 text-brand-gold"></i>
+          06 96 89 09 51
+        </a>
+        <a href="https://wa.me/596696890951?text=Bonjour%20Net'Toit%20Renov,%20je%20souhaite%20un%20devis" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#25D366] text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Discuter sur WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section avec photos réelles -->
+  <section class="relative bg-brand-navy text-white overflow-hidden py-16 lg:py-24">
+    <!-- Image de fond réelle -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://i.imgur.com/aI2aBrj.jpeg" 
+        alt="Toiture rénovée Net'Toit Renov en Martinique" 
+        class="w-full h-full object-cover object-center filter brightness-[0.35] contrast-110"
+        onerror="this.src='https://placehold.co/1920x1080/071e3d/ffffff?text=Net-Toit+Renov+Martinique'"
+      >
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-brand-navy/45"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold text-brand-gold">
+            <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+            Siège au Vauclin • Déplacement gratuit sur toute la Martinique
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading leading-tight tracking-tight text-white">
+            Rénovation, Étanchéité & Peinture Toiture en <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-200 to-cyan-300">Martinique</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Vos artisans couvreurs <strong class="text-white">Alfred Mouche</strong> et <strong class="text-white">Mathias Musset</strong> redonnent éclat et imperméabilité à votre toiture tôle ou tuile : démoussage haute pression, résines d'étanchéité et projection de peinture airless anti-chaleur.
+          </p>
+
+          <!-- Badges de réassurance -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+            <div class="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded-2xl flex items-center gap-3">
+              <i data-lucide="shield-check" class="w-8 h-8 text-brand-emeraldLight shrink-0"></i>
+              <div>
+                <span class="block text-[11px] text-slate-300">Garantie 10 ans</span>
+                <span class="text-xs font-bold text-white leading-tight">Décennale PROGEAS</span>
+              </div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded-2xl flex items-center gap-3">
+              <i data-lucide="spray-can" class="w-8 h-8 text-brand-gold shrink-0"></i>
+              <div>
+                <span class="block text-[11px] text-slate-300">Finition parfaite</span>
+                <span class="text-xs font-bold text-white leading-tight">Pulvérisation Airless</span>
+              </div>
+            </div>
+            <div class="col-span-2 sm:col-span-1 bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded-2xl flex items-center gap-3">
+              <i data-lucide="sun-medium" class="w-8 h-8 text-cyan-300 shrink-0"></i>
+              <div>
+                <span class="block text-[11px] text-slate-300">Climat tropical</span>
+                <span class="text-xs font-bold text-white leading-tight">Résine Anti-UV</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boutons Hero -->
+          <div class="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#simulateur" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-brand-gold to-brand-coral hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-base shadow-xl shadow-brand-gold/30 flex items-center justify-center gap-3 group transition transform hover:-translate-y-0.5">
+              <span>Estimer & Demander un Devis</span>
+              <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="tel:0696890951" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold text-base flex items-center justify-center gap-2.5 backdrop-blur-sm transition">
+              <i data-lucide="phone" class="w-5 h-5 text-brand-emeraldLight"></i>
+              <span>06 96 89 09 51</span>
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-300 pt-2">
+            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Déplacement gratuit</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Sans engagement</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Réponse rapide 24h</span>
+          </div>
+
+        </div>
+
+        <!-- Deuxième photo réelle en mise en avant -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-slate-900 group">
+            <img 
+              src="https://i.imgur.com/1uDHMjs.jpeg" 
+              alt="Application peinture toiture tôle airless Martinique" 
+              class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
+              onerror="this.src='https://placehold.co/800x600/071e3d/ffffff?text=Net-Toit+Renov+Chantier'"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-brand-emerald flex items-center justify-center font-black">
+                <i data-lucide="droplet" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs">
+                <p class="font-bold text-slate-900">Étanchéité Garantie</p>
+                <p class="text-slate-600">Résine fibrée anti-infiltrations</p>
+              </div>
+            </div>
+
+            <div class="absolute bottom-4 right-4 left-4 bg-brand-dark/90 backdrop-blur-md p-3.5 rounded-2xl border border-white/15 text-white flex items-center justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-brand-gold font-bold">Chantier en Martinique</p>
+                <p class="text-xs font-semibold">Peinture résine haute durabilité</p>
+              </div>
+              <span class="text-xs bg-emerald-600 text-white font-bold px-2.5 py-1 rounded-lg">PROGEAS 10 ans</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Avant / Après Interactif -->
+  <section id="avant-apres" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-brand-emerald font-bold tracking-wider text-xs uppercase px-3.5 py-1.5 bg-emerald-50 rounded-full inline-block mb-3 border border-emerald-100">
+          Résultats Réels en Martinique
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-heading">
+          Glissez pour comparer l'Avant / Après
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Découvrez la différence immédiate entre une toiture oxydée par le sel marin et l'humidité, et sa rénovation complète avec notre résine et peinture de protection.
+        </p>
+      </div>
+
+      <!-- Slider interactif -->
+      <div class="max-w-4xl mx-auto">
+        <div id="comparisonBox" class="comparison-wrapper w-full h-[360px] sm:h-[480px] rounded-3xl shadow-2xl border-4 border-white bg-slate-900 cursor-col-resize select-none">
+          
+          <!-- Image APRÈS (Fond) -->
+          <div class="absolute inset-0 w-full h-full">
+            <img 
+              src="https://i.imgur.com/5twlInk.jpeg" 
+              alt="Toiture rénovée et peinte - Net'Toit Renov"
+              class="w-full h-full object-cover object-center"
+              onerror="this.src='https://placehold.co/1200x800/059669/ffffff?text=Toiture+Rénovée+Après'"
+            >
+            <div class="absolute top-4 right-4 bg-emerald-700/90 text-white font-bold text-xs uppercase px-3.5 py-1.5 rounded-xl shadow-lg flex items-center gap-1.5 backdrop-blur-sm z-10">
+              <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i>
+              Après Rénovation Net'Toit
+            </div>
+          </div>
+
+          <!-- Image AVANT (Masque rétractable) -->
+          <div id="beforeMask" class="absolute inset-0 h-full overflow-hidden z-10" style="width: 50%;">
+            <img 
+              src="https://i.imgur.com/6NaK8BS.jpeg" 
+              alt="Toiture avant nettoyage et rénovation"
+              class="absolute top-0 left-0 max-w-none h-full object-cover object-center"
+              id="beforeTargetImg"
+              onerror="this.src='https://placehold.co/1200x800/475569/ffffff?text=Toiture+Avant+Intervention'"
+            >
+            <div class="absolute top-4 left-4 bg-slate-900/90 text-white font-bold text-xs uppercase px-3.5 py-1.5 rounded-xl shadow-lg backdrop-blur-sm">
+              Avant Intervention (Rouille & Lichens)
+            </div>
+          </div>
+
+          <!-- Poignée centrale -->
+          <div id="sliderDivider" class="comparison-handle" style="left: 50%;">
+            <div class="comparison-circle">
+              <i data-lucide="chevrons-left-right" class="w-5 h-5 text-brand-navy"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-slate-500 mt-4 px-2">
+          <span class="flex items-center gap-1.5">
+            <i data-lucide="move-horizontal" class="w-4 h-4 text-brand-emerald"></i>
+            Glissez de gauche à droite avec la souris ou votre doigt
+          </span>
+          <span class="font-semibold text-brand-navy">Chantier réel toiture tôle en Martinique</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Galerie de Réalisations Réelles -->
+  <section id="galerie" class="py-20 bg-slate-100/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-cyan font-bold tracking-wider text-xs uppercase px-3.5 py-1.5 bg-cyan-50 rounded-full inline-block mb-3 border border-cyan-100">
+          Chantiers en Images
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-heading">
+          Nos Réalisations sur l'Île
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Cliquez sur chaque photo pour zoomer et découvrir le détail de nos interventions (nettoyage haute pression, réfection faîtage, résine et peinture).
+        </p>
+      </div>
+
+      <!-- Grille des photos réelles -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="galleryContainer">
+        
+        <!-- Photo 1 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/kr7FyrO.jpeg" 
+             data-title="Nettoyage et décapage toiture tôle" 
+             data-desc="Élimination des micro-algues, lichens et dépôts marins au nettoyeur haute pression thermique.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/kr7FyrO.jpeg" alt="Nettoyage toiture Net'Toit Renov" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-emerald uppercase">Nettoyage Préparatoire</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Décapage toiture tôle</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Assainissement complet avant pose de résine ou mise en peinture.</p>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/n2MnwYm.jpeg" 
+             data-title="Traitement résine d'étanchéité" 
+             data-desc="Application de résine élastomère étanche avec traitement préventif des têtes de vis et faîtages.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/n2MnwYm.jpeg" alt="Résine étanchéité toiture" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-gold uppercase">Étanchéité Liquide</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Membrane d'étanchéité</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Comblement des microfissures et barrière anti-infiltrations d'eau de pluie.</p>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/fy3MCUJ.jpeg" 
+             data-title="Peinture toiture Airless en cours" 
+             data-desc="Pulvérisation homogène de peinture spéciale toiture tropicale pour un tendu sans traces.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/fy3MCUJ.jpeg" alt="Peinture toiture airless" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-coral uppercase">Finition Airless</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Projection mécanisée</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Épaisseur protectrice constante et tenue optimale face aux UV tropicaux.</p>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/aYmXpMX.jpeg" 
+             data-title="Rénovation toiture habitation" 
+             data-desc="Rénovation complète des pans de toiture sur villa avec sécurisation des fixations.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/aYmXpMX.jpeg" alt="Chantier toiture villa" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-emerald uppercase">Rénovation Villa</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Toiture complète traitée</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Valorisation esthétique immédiate et protection longue durée.</p>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/UjuCnrP.jpeg" 
+             data-title="Préparation et assainissement" 
+             data-desc="Traitement en profondeur des zones encrassées et suppression de l'oxydation.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/UjuCnrP.jpeg" alt="Préparation de toiture" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-cyan uppercase">Traitement Surface</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Convertisseur de rouille</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Application d'un primaire neutralisant la corrosion avant peinture.</p>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/AlXVKmi.jpeg" 
+             data-title="Chantier Rénovation Rive & Faîtage" 
+             data-desc="Contrôle des rives, faîtages et étanchéité de toiture bac acier.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/AlXVKmi.jpeg" alt="Faîtage toiture rénovée" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-gold uppercase">Zinguerie & Faîtage</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Sécurisation des arêtes</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Protection renforcée contre les infiltrations causées par les rafales de vent.</p>
+          </div>
+        </div>
+
+        <!-- Photo 7 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/uhsR07b.jpeg" 
+             data-title="Application couche de finition" 
+             data-desc="Finition soignée avec revêtement toiture thermo-réfléchissant.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/uhsR07b.jpeg" alt="Peinture toiture finition" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-emerald uppercase">Finition Satinée</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Peinture anti-chaleur</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Diminue la chaleur accumulée sous la toiture pour un meilleur confort.</p>
+          </div>
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="gallery-item group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer border border-slate-200" 
+             data-img="https://i.imgur.com/6k2ZfCB.jpeg" 
+             data-title="Toiture Réceptionnée Clé en Main" 
+             data-desc="Toiture impeccable livrée au client avec garantie décennale PROGEAS.">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://i.imgur.com/6k2ZfCB.jpeg" alt="Toiture finalisée en Martinique" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-brand-navy/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-11 h-11 rounded-full bg-white text-brand-navy flex items-center justify-center shadow-lg"><i data-lucide="zoom-in" class="w-5 h-5"></i></span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <span class="text-[11px] font-bold text-brand-coral uppercase">Chantier Livré</span>
+            <h4 class="font-bold text-brand-navy text-sm mt-0.5">Rendu esthétique neuf</h4>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Garantie 10 ans sur la résistance et l'imperméabilité des toits.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Nos Prestations -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-emerald font-bold tracking-wider text-xs uppercase px-3.5 py-1.5 bg-emerald-50 rounded-full inline-block mb-3 border border-emerald-100">
+          Nos Expertises Toiture
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-heading">
+          Des Prestations Conçues pour le Climat Antillais
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Le soleil intense, l'air salin et les fortes précipitations tropicales exigent des résines et peintures professionnelles haute résistance.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Prestation 1 -->
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 hover:border-brand-emerald hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-emerald flex items-center justify-center mb-6 group-hover:bg-brand-emerald group-hover:text-white transition-colors shadow-sm">
+              <i data-lucide="waves" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-3 font-heading">
+              Nettoyage & Démoussage Haute Pression
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Nettoyage thermique haute pression réglé pour respecter le support. Élimination complète des dépôts, mousses et lichens.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-emerald"></i> Traitement fongicide et algicide</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-emerald"></i> Rinçage en profondeur des tôles</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-emerald"></i> Nettoyage des gouttières inclus</li>
+            </ul>
+          </div>
+          <a href="#simulateur" class="text-sm font-bold text-brand-navy group-hover:text-brand-emerald flex items-center gap-1.5 transition">
+            Estimer ce service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Prestation 2 -->
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 hover:border-brand-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-brand-goldDark flex items-center justify-center mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors shadow-sm">
+              <i data-lucide="shield" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-3 font-heading">
+              Résine d'Étanchéité Liquide (SEL)
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Pose d'une membrane d'étanchéité souple et sans joint. Suppression définitive des fuites d'eau sur toitures plates, bacs acier et solins.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Pontage fibré des micro-fissures</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Résistant aux UV et eaux stagnantes</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Assurance Décennale PROGEAS</li>
+            </ul>
+          </div>
+          <a href="#simulateur" class="text-sm font-bold text-brand-navy group-hover:text-brand-gold flex items-center gap-1.5 transition">
+            Estimer ce service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Prestation 3 -->
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 hover:border-brand-cyan hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-brand-cyan flex items-center justify-center mb-6 group-hover:bg-brand-cyan group-hover:text-white transition-colors shadow-sm">
+              <i data-lucide="spray-can" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-3 font-heading">
+              Peinture Toiture Airless Anti-Chaleur
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Projection mécanisée sans air pour un film uniforme. Peinture spéciale réfléchissant le rayonnement solaire et stoppant la rouille.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> Primaire d'accroche antirouille</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> 2 couches de finition satinée</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> Choix des teintes toiture</li>
+            </ul>
+          </div>
+          <a href="#simulateur" class="text-sm font-bold text-brand-navy group-hover:text-brand-cyan flex items-center gap-1.5 transition">
+            Estimer ce service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Prestation 4 -->
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 hover:border-brand-coral hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-orange-100 text-brand-coral flex items-center justify-center mb-6 group-hover:bg-brand-coral group-hover:text-white transition-colors shadow-sm">
+              <i data-lucide="wrench" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-3 font-heading">
+              Tire-fonds, Faîtages & Rives
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Remplacement des vis rouillées par des tire-fonds neufs avec rondelles d'étanchéité néoprène. Consolidation pré-cyclonique.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-coral"></i> Visserie neuve avec joint étanche</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-coral"></i> Rives et raccords scellés</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-coral"></i> Solidification face aux cyclones</li>
+            </ul>
+          </div>
+          <a href="#simulateur" class="text-sm font-bold text-brand-navy group-hover:text-brand-coral flex items-center gap-1.5 transition">
+            Estimer ce service <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Artisans & Garantie Décennale PROGEAS -->
+  <section id="garantie" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-brand-gold font-bold tracking-wider text-xs uppercase px-3.5 py-1 bg-white/10 rounded-full inline-block">
+            Artisans Qualifiés au Vauclin
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading">
+            Alfred Mouche & Mathias Musset
+          </h2>
+          <p class="text-slate-300 leading-relaxed">
+            Chez <strong class="text-white">Net'Toit Renov</strong>, nous réalisons chaque intervention nous-mêmes avec rigueur. Votre toiture est inspectée minutieusement avant chaque devis pour appliquer le traitement exact requis.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4">
+              <div class="p-3 rounded-2xl bg-brand-emerald/20 text-brand-emeraldLight shrink-0">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Garantie Décennale PROGEAS (N° AXRCD220259)</h4>
+                <p class="text-sm text-slate-300">Vos travaux d'étanchéité et de couverture sont assurés pendant 10 ans.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-3 rounded-2xl bg-brand-gold/20 text-brand-gold shrink-0">
+                <i data-lucide="badge-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Entreprise Déclarée (SIRET Rm503 853 491)</h4>
+                <p class="text-sm text-slate-300">Entreprise artisanale locale basée au Vauclin (Chemin du petit macabou).</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-3 rounded-2xl bg-cyan-400/20 text-cyan-300 shrink-0">
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Déplacement & Étude Technique 100% Gratuits</h4>
+                <p class="text-sm text-slate-300">Nous nous déplaçons chez vous pour observer votre toiture et estimer les travaux sans engagement.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Fiche Assurance -->
+        <div class="lg:col-span-6">
+          <div class="bg-gradient-to-br from-slate-900 to-slate-800 border border-white/15 rounded-3xl p-8 shadow-2xl relative">
+            <div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
+              <div>
+                <span class="text-xs uppercase text-brand-gold font-bold tracking-widest block">Police d'Assurance</span>
+                <span class="text-2xl font-black text-white">PROGEAS ASSURANCES</span>
+              </div>
+              <div class="w-12 h-12 rounded-2xl bg-brand-emerald/20 text-brand-emeraldLight flex items-center justify-center">
+                <i data-lucide="file-check" class="w-6 h-6"></i>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs mb-6">
+              <div class="bg-white/5 p-3.5 rounded-xl border border-white/5">
+                <span class="text-slate-400 block mb-1">Police Décennale</span>
+                <span class="font-mono font-bold text-white text-sm">AXRCD220259</span>
+              </div>
+              <div class="bg-white/5 p-3.5 rounded-xl border border-white/5">
+                <span class="text-slate-400 block mb-1">Numéro SIRET</span>
+                <span class="font-mono font-bold text-white text-sm">Rm503 853 491</span>
+              </div>
+              <div class="bg-white/5 p-3.5 rounded-xl border border-white/5">
+                <span class="text-slate-400 block mb-1">Responsables Artisans</span>
+                <span class="font-bold text-white">Alfred Mouche & Mathias Musset</span>
+              </div>
+              <div class="bg-white/5 p-3.5 rounded-xl border border-white/5">
+                <span class="text-slate-400 block mb-1">Téléphone Direct</span>
+                <span class="font-bold text-brand-emeraldLight">06 96 89 09 51</span>
+              </div>
+            </div>
+
+            <div class="bg-brand-emerald/10 border border-brand-emerald/30 p-4 rounded-2xl flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-brand-emerald shrink-0"></i>
+              <p class="text-xs text-slate-200">
+                Chemin du petit macabou, 97280 Le Vauclin, Martinique. Déplacement dans toute l'île.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Simulateur de Devis Instantané -->
+  <section id="simulateur" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-coral font-bold tracking-wider text-xs uppercase px-3.5 py-1.5 bg-orange-50 rounded-full inline-block mb-3 border border-orange-100">
+          Chiffrage Immédiat Sans Engagement
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-heading">
+          Simulateur de Devis Toiture
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Calculez une estimation indicative en fonction de votre surface et de vos besoins, puis transmettez votre demande pour réserver votre visite offerte.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Simulateur dynamique -->
+        <div class="lg:col-span-7 bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl shadow-sm">
+          
+          <h3 class="text-lg font-bold text-brand-navy mb-6 flex items-center gap-2">
+            <i data-lucide="sliders" class="w-5 h-5 text-brand-emerald"></i>
+            1. Caractéristiques de votre toiture
+          </h3>
+
+          <div class="space-y-6">
+            
+            <!-- Type de toit -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Matériau du toit :</label>
+              <div class="grid grid-cols-3 gap-3" id="roofTypeGroup">
+                <button type="button" data-multiplier="1.0" class="roof-btn active p-3 rounded-2xl border-2 border-brand-navy bg-brand-navy/5 text-brand-navy font-bold text-xs sm:text-sm text-center transition">
+                  <i data-lucide="layers" class="w-5 h-5 mx-auto mb-1 text-brand-emerald"></i>
+                  Tôle / Bac Acier
+                </button>
+                <button type="button" data-multiplier="1.15" class="roof-btn p-3 rounded-2xl border border-slate-200 bg-white text-slate-600 font-semibold text-xs sm:text-sm text-center hover:border-slate-400 transition">
+                  <i data-lucide="grid" class="w-5 h-5 mx-auto mb-1 text-brand-gold"></i>
+                  Tuile
+                </button>
+                <button type="button" data-multiplier="1.25" class="roof-btn p-3 rounded-2xl border border-slate-200 bg-white text-slate-600 font-semibold text-xs sm:text-sm text-center hover:border-slate-400 transition">
+                  <i data-lucide="square" class="w-5 h-5 mx-auto mb-1 text-cyan-600"></i>
+                  Dalle / Toit Plat
+                </button>
+              </div>
+            </div>
+
+            <!-- Surface Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="surfaceInput" class="text-xs font-bold uppercase tracking-wider text-slate-700">Surface approximative :</label>
+                <span class="text-lg font-black text-brand-emerald bg-emerald-50 px-3.5 py-1 rounded-xl border border-emerald-200 shadow-sm">
+                  <span id="surfaceVal">120</span> m²
+                </span>
+              </div>
+              <input 
+                type="range" 
+                id="surfaceInput" 
+                min="40" 
+                max="500" 
+                step="5" 
+                value="120"
+                class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-emerald"
+              >
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>40 m²</span>
+                <span>250 m²</span>
+                <span>500 m²</span>
+              </div>
+            </div>
+
+            <!-- Prestation -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Prestation souhaitée :</label>
+              <div class="space-y-2.5">
+                
+                <label class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 bg-white cursor-pointer hover:border-brand-emerald transition">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="formule" value="nettoyage" class="w-4 h-4 text-brand-emerald accent-brand-emerald" checked>
+                    <div>
+                      <span class="block text-sm font-bold text-slate-900">Nettoyage Haute Pression & Démoussage</span>
+                      <span class="text-xs text-slate-500">Décapage complet + traitement fongicide</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-slate-700">dès 14 €/m²</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 bg-white cursor-pointer hover:border-brand-emerald transition">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="formule" value="peinture" class="w-4 h-4 text-brand-emerald accent-brand-emerald">
+                    <div>
+                      <span class="block text-sm font-bold text-slate-900">Nettoyage + Peinture Airless Anti-Chaleur</span>
+                      <span class="text-xs text-slate-500">Antirouille + 2 couches de finition satinée</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-slate-700">dès 26 €/m²</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-2xl border border-slate-200 bg-white cursor-pointer hover:border-brand-emerald transition">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="formule" value="resine" class="w-4 h-4 text-brand-emerald accent-brand-emerald">
+                    <div>
+                      <span class="block text-sm font-bold text-slate-900">Rénovation Complète + Résine d'Étanchéité (SEL)</span>
+                      <span class="text-xs text-slate-500">Membrane élastomère + garantie décennale PROGEAS</span>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-slate-700">dès 38 €/m²</span>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Résultat Estimé -->
+            <div class="bg-gradient-to-r from-brand-navy to-slate-900 text-white p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <span class="text-xs uppercase text-slate-300 font-semibold tracking-wider">Estimation Indicative :</span>
+                <div class="text-2xl sm:text-3xl font-extrabold text-brand-gold" id="calculatedTotal">
+                  1 680 € – 2 160 €
+                </div>
+                <span class="text-[11px] text-slate-400">*Sous réserve du métré précis et de l'état de la toiture.</span>
+              </div>
+              <div class="text-right">
+                <span class="inline-block text-xs font-bold text-brand-emeraldLight bg-emerald-950/70 px-3 py-1.5 rounded-full border border-emerald-500/30">
+                  Déplacement & Visite Offerts
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="lg:col-span-5 bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl shadow-lg">
+          <h3 class="text-xl font-bold text-brand-navy mb-1 font-heading">
+            Demander mon devis détaillé
+          </h3>
+          <p class="text-xs text-slate-500 mb-6">
+            Alfred Mouche & Mathias Musset vous répondent sous 24h ouvrées.
+          </p>
+
+          <form id="quoteSubmitForm" class="space-y-4">
+            <div>
+              <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Nom & Prénom *</label>
+              <input type="text" id="clientName" required placeholder="ex: Patrick Marie-Luce" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-emerald text-sm">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Téléphone *</label>
+                <input type="tel" id="clientPhone" required placeholder="0696 XX XX XX" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-emerald text-sm">
+              </div>
+              <div>
+                <label for="clientCity" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Commune *</label>
+                <input type="text" id="clientCity" required placeholder="ex: Le Vauclin, Le François..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-emerald text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label for="clientEmail" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Adresse Email *</label>
+              <input type="email" id="clientEmail" required placeholder="contact@exemple.mq" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-emerald text-sm">
+            </div>
+
+            <div>
+              <label for="clientNotes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Détails sur votre toiture (optionnel)</label>
+              <textarea id="clientNotes" rows="3" placeholder="Infiltrations constatées, tôle rouillée, hauteur de la maison..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-emerald text-sm"></textarea>
+            </div>
+
+            <div id="quoteNotice" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm">
+              <div class="flex items-center gap-2 font-bold mb-1">
+                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600"></i>
+                Demande envoyée avec succès !
+              </div>
+              <p class="text-xs">Net'Toit Renov vous recontactera rapidement par téléphone pour confirmer votre rendez-vous.</p>
+            </div>
+
+            <button type="submit" id="btnSendQuote" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-gold to-brand-coral hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-brand-gold/30 hover:shadow-xl transition transform active:scale-[0.99] flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              Envoyer ma demande de devis
+            </button>
+            
+            <p class="text-[11px] text-center text-slate-400">
+              Données strictement confidentielles • Aucun démarchage commercial abusif.
+            </p>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Contact & Intervention en Martinique -->
+  <section id="contact" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-brand-emerald font-bold tracking-wider text-xs uppercase px-3.5 py-1.5 bg-emerald-50 rounded-full inline-block border border-emerald-100">
+            Contact & Intervention
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-heading">
+            Nous intervenons sur toute l'île
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Basée au <strong>Vauclin (Chemin du petit macabou)</strong>, l'équipe Net'Toit Renov intervient rapidement chez les particuliers, copropriétés et professionnels de Martinique.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-emerald/10 text-brand-emerald flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase font-bold block">Appelez-nous directement</span>
+                <a href="tel:0696890951" class="text-base font-extrabold text-brand-navy hover:text-brand-emerald transition">06 96 89 09 51</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-goldDark flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase font-bold block">Contact Email</span>
+                <a href="mailto:nettoitrenov@gmail.com" class="text-base font-extrabold text-brand-navy hover:text-brand-emerald transition">nettoitrenov@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 uppercase font-bold block">Atelier & Siège</span>
+                <span class="text-sm font-bold text-brand-navy">Chemin du petit macabou, 97280 Le Vauclin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/596696890951?text=Bonjour%20Net'Toit%20Renov,%20je%20souhaite%20des%20renseignements%20pour%20ma%20toiture" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm shadow-md transition">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Échanger directement sur WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Secteurs réguliers -->
+        <div class="lg:col-span-7">
+          <div class="bg-gradient-to-br from-slate-900 to-brand-navy p-8 rounded-3xl text-white shadow-xl relative overflow-hidden border border-slate-800">
+            
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+              <div>
+                <h4 class="text-lg font-bold font-heading text-white">Secteurs réguliers d'intervention</h4>
+                <p class="text-xs text-slate-300">Déplacement rapide et véhicules équipés</p>
+              </div>
+              <span class="text-xs font-bold bg-brand-emerald px-3 py-1 rounded-full text-white">Toute la Martinique</span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-semibold">
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold"></i> Le Vauclin (Siège)
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Le François
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Le Marin
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Sainte-Luce
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Rivière-Pilote
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Sainte-Anne
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Ducos & St-Esprit
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Le Lamentin
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Fort-de-France
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Les Trois-Îlets
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Le Robert & Trinité
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl flex items-center gap-2 border border-white/5">
+                <i data-lucide="check" class="w-4 h-4 text-brand-emeraldLight"></i> Schoelcher & Nord
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+              <span>Besoin d'un passage urgent ?</span>
+              <a href="tel:0696890951" class="text-brand-gold font-bold hover:underline flex items-center gap-1">
+                <i data-lucide="phone" class="w-3.5 h-3.5"></i> Appeler le 06 96 89 09 51
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal Lightbox Plein Écran -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+      
+      <button id="closeLightbox" aria-label="Fermer la vue" class="absolute -top-12 right-0 text-white hover:text-brand-gold p-2">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+
+      <div class="w-full rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/20">
+        <img id="lightboxImg" src="" alt="Chantier toiture agrandi" class="w-full max-h-[70vh] object-contain mx-auto">
+      </div>
+
+      <div class="w-full mt-4 text-center text-white">
+        <h4 id="lightboxTitle" class="text-lg font-bold font-heading">Titre du chantier</h4>
+        <p id="lightboxDesc" class="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl mx-auto">Description des travaux réalisés par Net'Toit Renov.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="bg-brand-dark text-slate-300 pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Colonne 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-brand-emerald flex items-center justify-center text-white">
+              <i data-lucide="home" class="w-6 h-6 text-brand-gold"></i>
+            </div>
+            <span class="text-xl font-black text-white tracking-tight font-heading">
+              NET'TOIT <span class="text-brand-emeraldLight">RENOV</span>
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Entreprise artisanale de rénovation de toitures en Martinique, dirigée par <strong class="text-white">Alfred Mouche</strong> & <strong class="text-white">Mathias Musset</strong>.
+          </p>
+          <div class="text-xs text-slate-400 space-y-1">
+            <p><strong class="text-white">SIRET :</strong> Rm503 853 491</p>
+            <p><strong class="text-brand-emeraldLight">Garantie Décennale PROGEAS :</strong> AXRCD220259</p>
+          </div>
+        </div>
+
+        <!-- Colonne 2 -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-4">Nos Prestations</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#services" class="hover:text-white transition">Nettoyage haute pression & démoussage</a></li>
+            <li><a href="#services" class="hover:text-white transition">Résine d'étanchéité toiture</a></li>
+            <li><a href="#services" class="hover:text-white transition">Peinture airless tôle & tuile</a></li>
+            <li><a href="#services" class="hover:text-white transition">Remplacement tire-fonds & zinguerie</a></li>
+            <li><a href="#services" class="hover:text-white transition">Traitement hydrofuge et fongicide</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-4">Coordonnées</h4>
+          <ul class="space-y-3 text-xs text-slate-400">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-emeraldLight shrink-0 mt-0.5"></i>
+              <span>Chemin du petit macabou, 97280 Le Vauclin, Martinique</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-emeraldLight shrink-0"></i>
+              <a href="tel:0696890951" class="hover:text-white transition font-bold text-slate-200">06 96 89 09 51</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-emeraldLight shrink-0"></i>
+              <a href="mailto:nettoitrenov@gmail.com" class="hover:text-white transition">nettoitrenov@gmail.com</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-emeraldLight shrink-0"></i>
+              <span>Du Lundi au Samedi : 7h00 - 18h00</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-4">Contact Direct</h4>
+          <p class="text-xs text-slate-400 mb-4">
+            Envoyez-nous des photos de votre toiture directement par WhatsApp pour un pré-diagnostic immédiat.
+          </p>
+          <a href="https://wa.me/596696890951?text=Bonjour%20Net'Toit%20Renov,%20voici%20les%20photos%20de%20ma%20toiture" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs transition shadow-md">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Envoyer mes photos sur WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© <span id="yearCurrent"></span> Net'Toit Renov. Tous droits réservés. Alfred Mouche & Mathias Musset.</p>
+        <div class="flex items-center gap-4">
+          <a href="#avant-apres" class="hover:underline">Avant / Après</a>
+          <span>•</span>
+          <a href="#galerie" class="hover:underline">Chantiers</a>
+          <span>•</span>
+          <a href="#simulateur" class="hover:underline">Devis en ligne</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Initialisation des icônes Lucide
+    lucide.createIcons();
+
+    // Année dynamique
+    document.getElementById('yearCurrent').textContent = new Date().getFullYear();
+
+    // Gestion du menu mobile
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileItems = document.querySelectorAll('.mobile-item');
+
+    if (mobileToggle && mobileNav) {
+      mobileToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+      });
+
+      mobileItems.forEach(item => {
+        item.addEventListener('click', () => {
+          mobileNav.classList.add('hidden');
+        });
+      });
+    }
+
+    // Gestion du slider interactif Avant / Après
+    const comparisonBox = document.getElementById('comparisonBox');
+    const beforeMask = document.getElementById('beforeMask');
+    const beforeTargetImg = document.getElementById('beforeTargetImg');
+    const sliderDivider = document.getElementById('sliderDivider');
+    let isDragging = false;
+
+    function adjustComparison(clientX) {
+      if (!comparisonBox || !beforeMask || !sliderDivider || !beforeTargetImg) return;
+      const rect = comparisonBox.getBoundingClientRect();
+      let pos = clientX - rect.left;
+      if (pos < 10) pos = 10;
+      if (pos > rect.width - 10) pos = rect.width - 10;
+      
+      const pct = (pos / rect.width) * 100;
+      beforeMask.style.width = pct + '%';
+      sliderDivider.style.left = pct + '%';
+      beforeTargetImg.style.width = rect.width + 'px';
+    }
+
+    function syncInnerImageWidth() {
+      if (comparisonBox && beforeTargetImg) {
+        beforeTargetImg.style.width = comparisonBox.offsetWidth + 'px';
+      }
+    }
+
+    window.addEventListener('resize', syncInnerImageWidth);
+    window.addEventListener('load', syncInnerImageWidth);
+
+    if (comparisonBox) {
+      comparisonBox.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        adjustComparison(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        adjustComparison(e.clientX);
+      });
+
+      comparisonBox.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        if (e.touches.length > 0) adjustComparison(e.touches[0].clientX);
+      }, { passive: true });
+      window.addEventListener('touchend', () => { isDragging = false; });
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging || e.touches.length === 0) return;
+        adjustComparison(e.touches[0].clientX);
+      }, { passive: true });
+    }
+
+    // Gestion de la Lightbox
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxDesc = document.getElementById('lightboxDesc');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    if (lightboxModal && lightboxImg) {
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const src = item.getAttribute('data-img');
+          const title = item.getAttribute('data-title');
+          const desc = item.getAttribute('data-desc');
+
+          lightboxImg.src = src;
+          lightboxTitle.textContent = title;
+          lightboxDesc.textContent = desc;
+
+          lightboxModal.classList.remove('hidden');
+          document.body.classList.add('lightbox-open');
+        });
+      });
+
+      if (closeLightbox) {
+        closeLightbox.addEventListener('click', () => {
+          lightboxModal.classList.add('hidden');
+          document.body.classList.remove('lightbox-open');
+        });
+      }
+
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+          lightboxModal.classList.add('hidden');
+          document.body.classList.remove('lightbox-open');
+        }
+      });
+    }
+
+    // Gestion du simulateur de devis
+    const surfaceInput = document.getElementById('surfaceInput');
+    const surfaceVal = document.getElementById('surfaceVal');
+    const calculatedTotal = document.getElementById('calculatedTotal');
+    const roofBtns = document.querySelectorAll('.roof-btn');
+    let roofCoef = 1.0;
+
+    roofBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        roofBtns.forEach(b => {
+          b.classList.remove('border-2', 'border-brand-navy', 'bg-brand-navy/5', 'text-brand-navy');
+          b.classList.add('border-slate-200', 'bg-white', 'text-slate-600');
+        });
+        btn.classList.remove('border-slate-200', 'bg-white', 'text-slate-600');
+        btn.classList.add('border-2', 'border-brand-navy', 'bg-brand-navy/5', 'text-brand-navy');
+
+        roofCoef = parseFloat(btn.getAttribute('data-multiplier'));
+        computeEstimate();
+      });
+    });
+
+    function computeEstimate() {
+      if (!surfaceInput || !surfaceVal || !calculatedTotal) return;
+      const area = parseInt(surfaceInput.value, 10);
+      surfaceVal.textContent = area;
+
+      const checkedFormule = document.querySelector('input[name="formule"]:checked');
+      const formuleType = checkedFormule ? checkedFormule.value : 'nettoyage';
+
+      let minRate = 14;
+      let maxRate = 18;
+
+      if (formuleType === 'peinture') {
+        minRate = 26;
+        maxRate = 34;
+      } else if (formuleType === 'resine') {
+        minRate = 38;
+        maxRate = 48;
+      }
+
+      const minCost = Math.round(area * minRate * roofCoef);
+      const maxCost = Math.round(area * maxRate * roofCoef);
+
+      const fMin = new Intl.NumberFormat('fr-FR').format(minCost);
+      const fMax = new Intl.NumberFormat('fr-FR').format(maxCost);
+
+      calculatedTotal.textContent = `${fMin} € – ${fMax} €`;
+    }
+
+    if (surfaceInput) {
+      surfaceInput.addEventListener('input', computeEstimate);
+    }
+    document.querySelectorAll('input[name="formule"]').forEach(radio => {
+      radio.addEventListener('change', computeEstimate);
+    });
+
+    // Envoi du formulaire de devis
+    const quoteSubmitForm = document.getElementById('quoteSubmitForm');
+    const quoteNotice = document.getElementById('quoteNotice');
+    const btnSendQuote = document.getElementById('btnSendQuote');
+
+    if (quoteSubmitForm && btnSendQuote && quoteNotice) {
+      quoteSubmitForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        btnSendQuote.disabled = true;
+        btnSendQuote.innerHTML = 'Envoi en cours...';
+
+        setTimeout(() => {
+          btnSendQuote.classList.add('hidden');
+          quoteNotice.classList.remove('hidden');
+          quoteSubmitForm.reset();
+        }, 800);
+      });
+    }
+
+    // Calcul initial
+    computeEstimate();
+  </script>
+</body>
+</html>
