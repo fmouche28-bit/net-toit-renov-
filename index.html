@@ -178,30 +178,7 @@
 </head>
 <body class="antialiased selection:bg-brand-green selection:text-white">
 
-    <!-- BANNIÈRE D'IMPORTATION EN 1 CLIC & EXPORT AUTONOME (Anti-blocage Sandbox) -->
-    <div id="photo-sync-bar" class="bg-brand-charcoal text-white py-2.5 px-4 border-b-2 border-brand-green relative z-50">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5 text-xs sm:text-sm">
-            <div class="flex items-center gap-2.5 text-center sm:text-left">
-                <span class="w-7 h-7 rounded-lg bg-brand-green text-white flex items-center justify-center shrink-0 animate-pulse">
-                    <i class="fa-solid fa-images"></i>
-                </span>
-                <span id="photo-sync-status">
-                    <strong>Mode Aperçu Intelligent :</strong> Chargez vos 9 photos Avant/Après & votre logo en 1 seul clic pour les afficher en haute définition et les sauvegarder.
-                </span>
-            </div>
-            <div class="flex flex-wrap items-center justify-center gap-2 shrink-0">
-                <label for="bulk-photo-input" class="cursor-pointer px-3.5 py-1.5 rounded-xl bg-brand-green hover:bg-brand-greenLight text-white font-heading font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <span>📸 Charger mes 9 photos & logo (1 clic)</span>
-                </label>
-                <input type="file" id="bulk-photo-input" multiple accept="image/*" class="hidden" onchange="handleBulkPhotoUpload(event)">
-                
-                <button type="button" onclick="exportStandaloneWebsite()" id="export-site-btn" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-emerald-300 border border-emerald-400/30 font-heading font-bold text-xs transition-all flex items-center gap-1.5" title="Télécharger le fichier HTML complet avec vos photos intégrées">
-                    <i class="fa-solid fa-download"></i>
-                    <span>Exporter le site (.html)</span>
-                </button>
-            </div>
-        </div>
+    
     </div>
 
     <!-- Top Martinique Announcement Bar -->
