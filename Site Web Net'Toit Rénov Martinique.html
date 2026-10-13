@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net'Toit Rénov | Peinture Airless, Démoussage & Étanchéité Toiture en Martinique (972)</title>
+    <meta name="description" content="Spécialiste de la rénovation de toiture en Martinique : Peinture Airless anti-corrosion sur tôle, démoussage de tuiles, étanchéité des fixations et gouttières. Devis gratuit dans tout le 972.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#1E7E62',      /* Vert Émeraude officiel NET'TOIT RÉNOV */
+                            greenLight: '#28A07D', /* Vert lumineux */
+                            greenDark: '#145A46',  /* Vert profond */
+                            mint: '#ECFDF5',       /* Fond vert menthe très clair */
+                            mintBorder: '#A7F3D0', /* Bordure menthe */
+                            charcoal: '#2B2F36',   /* Gris anthracite du logo */
+                            slateGray: '#5D616A'   /* Gris ardoise du pan central du logo */
+                        }
+                    },
+                    animation: {
+                        'float': 'float 4s ease-in-out infinite',
+                        'pulse-green': 'pulseGreen 2.5s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-7px)' },
+                        },
+                        pulseGreen: {
+                            '0%, 100%': { boxShadow: '0 0 0 0 rgba(30, 126, 98, 0.55)' },
+                            '50%': { boxShadow: '0 0 0 12px rgba(30, 126, 98, 0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #2B2F36;
+            overflow-x: hidden;
+        }
+
+        .white-glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(30, 126, 98, 0.15);
+        }
+
+        .pro-card {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .pro-card:hover {
+            border-color: #1E7E62;
+            transform: translateY(-5px);
+            box-shadow: 0 22px 45px -12px rgba(30, 126, 98, 0.18);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Interactive Before / After Slider */
+        .ba-slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: pan-y;
+            background: #0f172a;
+        }
+
+        .ba-before-clip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .ba-divider-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #FFFFFF;
+            z-index: 20;
+            transform: translateX(-50%);
+            cursor: ew-resize;
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+        }
+
+        .ba-handle-knob {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 52px;
+            height: 52px;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #28A07D, #1E7E62);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(30, 126, 98, 0.65), 0 0 0 4px #FFFFFF;
+            transition: transform 0.2s ease;
+        }
+
+        .ba-slider-wrapper:hover .ba-handle-knob,
+        .ba-slider-wrapper:active .ba-handle-knob {
+            transform: translate(-50%, -50%) scale(1.12);
+        }
+
+        /* Custom Range Input */
+        input[type=range] {
+            -webkit-appearance: none;
+            background: transparent;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            height: 10px;
+            border-radius: 999px;
+            background: #D1FAE5;
+            border: 1px solid #A7F3D0;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            background: #1E7E62;
+            cursor: pointer;
+            margin-top: -10px;
+            box-shadow: 0 4px 12px rgba(30, 126, 98, 0.45);
+            border: 3px solid #FFFFFF;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-green selection:text-white">
+
+    <!-- BANNIÈRE D'IMPORTATION EN 1 CLIC & EXPORT AUTONOME (Anti-blocage Sandbox) -->
+    <div id="photo-sync-bar" class="bg-brand-charcoal text-white py-2.5 px-4 border-b-2 border-brand-green relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5 text-xs sm:text-sm">
+            <div class="flex items-center gap-2.5 text-center sm:text-left">
+                <span class="w-7 h-7 rounded-lg bg-brand-green text-white flex items-center justify-center shrink-0 animate-pulse">
+                    <i class="fa-solid fa-images"></i>
+                </span>
+                <span id="photo-sync-status">
+                    <strong>Mode Aperçu Intelligent :</strong> Chargez vos 9 photos Avant/Après & votre logo en 1 seul clic pour les afficher en haute définition et les sauvegarder.
+                </span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-2 shrink-0">
+                <label for="bulk-photo-input" class="cursor-pointer px-3.5 py-1.5 rounded-xl bg-brand-green hover:bg-brand-greenLight text-white font-heading font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>📸 Charger mes 9 photos & logo (1 clic)</span>
+                </label>
+                <input type="file" id="bulk-photo-input" multiple accept="image/*" class="hidden" onchange="handleBulkPhotoUpload(event)">
+                
+                <button type="button" onclick="exportStandaloneWebsite()" id="export-site-btn" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-emerald-300 border border-emerald-400/30 font-heading font-bold text-xs transition-all flex items-center gap-1.5" title="Télécharger le fichier HTML complet avec vos photos intégrées">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Exporter le site (.html)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Martinique Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-greenDark via-brand-green to-brand-greenLight text-white text-xs sm:text-sm py-2 px-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2 font-medium">
+                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/20 text-white text-xs">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <span>Basé au <strong>Vauclin (97280)</strong> — Intervention dans toute la Martinique</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 font-medium">
+                <span><i class="fa-solid fa-check-circle mr-1.5 text-emerald-200"></i>Déplacement & Diagnostic Gratuits</span>
+                <span><i class="fa-solid fa-shield-halved mr-1.5 text-emerald-200"></i>SIRET : RM 503 853 491</span>
+                <a href="tel:0696890951" class="underline hover:text-emerald-100 font-bold"><i class="fa-solid fa-phone mr-1"></i>06 96 89 09 51</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky White & Green Navigation -->
+    <header class="sticky top-0 z-40 white-glass-nav transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between">
+            <!-- Official Brand Logo (Inline SVG exact replica + dynamic image upgrade) -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-16 h-16 sm:w-20 sm:h-16 rounded-xl bg-white p-1 border border-slate-200/90 shadow-sm flex items-center justify-center overflow-hidden group-hover:border-brand-green transition-all">
+                    <!-- Dynamic Image if loaded, otherwise 100% faithful vector SVG -->
+                    <img id="nav-logo-img" src="1000069960.jpg" alt="Logo Net'Toit Rénov" class="h-full w-auto object-contain hidden" onload="showUploadedLogo(this)" onerror="this.classList.add('hidden')">
+                    <svg id="nav-logo-svg" viewBox="0 0 500 430" class="w-full h-full">
+                        <!-- Toit Gauche Gris Anthracite -->
+                        <polygon points="18,225 84,132 246,132 152,264 98,186 44,225" fill="#33373B"/>
+                        <!-- Fenêtre Gauche 4 carreaux Vert Émeraude -->
+                        <rect x="64" y="198" width="13" height="13" fill="#21836A"/>
+                        <rect x="81" y="198" width="13" height="13" fill="#21836A"/>
+                        <rect x="64" y="215" width="13" height="13" fill="#21836A"/>
+                        <rect x="81" y="215" width="13" height="13" fill="#21836A"/>
+                        <!-- Pan Central Gris Ardoise en V -->
+                        <polygon points="158,274 288,88 408,88 225,352" fill="#5D616A"/>
+                        <!-- Toit Droit Vert Émeraude -->
+                        <polygon points="228,365 422,90 490,192 465,192 422,128 242,376" fill="#21836A"/>
+                        <!-- Fenêtre Droite 4 carreaux Vert Émeraude -->
+                        <rect x="408" y="166" width="14" height="14" fill="#21836A"/>
+                        <rect x="426" y="166" width="14" height="14" fill="#21836A"/>
+                        <rect x="408" y="184" width="14" height="14" fill="#21836A"/>
+                        <rect x="426" y="184" width="14" height="14" fill="#21836A"/>
+                        <!-- Texte NET'TOIT RÉNOV -->
+                        <text x="250" y="415" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="44" letter-spacing="3">
+                            <tspan fill="#33373B">NET’TOIT </tspan><tspan fill="#21836A">RÉNOV</tspan>
+                        </text>
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-heading font-extrabold text-lg sm:text-2xl tracking-tight text-brand-charcoal leading-none">
+                        NET'TOIT <span class="text-brand-green">RÉNOV</span>
+                    </div>
+                    <div class="text-[10px] sm:text-[11px] text-slate-500 font-semibold tracking-wider uppercase mt-1">
+                        Peinture Airless • Démoussage • Étanchéité 972
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-brand-charcoal">
+                <a href="#avant-apres" class="hover:text-brand-green transition-colors flex items-center gap-2 text-brand-green font-bold">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-ping"></span>
+                    Nos Avant / Après (9 Chantiers)
+                </a>
+                <a href="#prestations" class="hover:text-brand-green transition-colors">Nos Prestations</a>
+                <a href="#methode" class="hover:text-brand-green transition-colors">Notre Méthode</a>
+                <a href="#simulateur" class="hover:text-brand-green transition-colors">Devis en Ligne</a>
+                <a href="#contact" class="hover:text-brand-green transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-2.5 sm:gap-3">
+                <a href="tel:0696890951" class="hidden sm:flex items-center gap-2 bg-brand-mint hover:bg-emerald-100 text-brand-greenDark border border-brand-mintBorder px-4 py-2.5 rounded-xl text-sm font-bold transition-all">
+                    <i class="fa-solid fa-phone-volume text-brand-green animate-bounce"></i>
+                    <span>06 96 89 09 51</span>
+                </a>
+                <a href="#simulateur" class="bg-gradient-to-r from-brand-green to-brand-greenLight hover:from-brand-greenDark hover:to-brand-green text-white px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl text-sm font-heading font-bold shadow-md animate-pulse-green transition-all flex items-center gap-2">
+                    <span>Devis Gratuit</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <button id="mobile-menu-btn" aria-label="Menu" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-brand-charcoal hover:bg-brand-mint hover:text-brand-green border border-slate-200">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2.5 shadow-xl">
+            <a href="#avant-apres" class="mobile-link block py-2.5 px-3.5 rounded-xl bg-brand-mint/60 text-brand-greenDark font-bold">
+                <i class="fa-solid fa-sliders text-brand-green mr-2"></i>Voir nos 9 Avant / Après Interactifs
+            </a>
+            <a href="#prestations" class="mobile-link block py-2.5 px-3.5 rounded-xl hover:bg-slate-50 text-brand-charcoal font-semibold">
+                <i class="fa-solid fa-spray-can-sparkles text-brand-green mr-2"></i>Nos Prestations Toiture & Airless
+            </a>
+            <a href="#methode" class="mobile-link block py-2.5 px-3.5 rounded-xl hover:bg-slate-50 text-brand-charcoal font-semibold">
+                <i class="fa-solid fa-list-check text-brand-green mr-2"></i>Les 4 Étapes d'un Chantier Réussi
+            </a>
+            <a href="#simulateur" class="mobile-link block py-2.5 px-3.5 rounded-xl hover:bg-slate-50 text-brand-charcoal font-semibold">
+                <i class="fa-solid fa-calculator text-brand-green mr-2"></i>Simulateur de Devis Gratuit
+            </a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:0696890951" class="w-full py-3 rounded-xl bg-brand-green text-center font-bold text-white shadow-md">
+                    <i class="fa-solid fa-phone mr-2"></i>Appeler le 06 96 89 09 51
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (WHITE & EMERALD GREEN THEME) -->
+    <section class="relative pt-8 pb-16 lg:pt-14 lg:pb-22 overflow-hidden bg-gradient-to-b from-brand-mint/70 via-white to-white">
+        <div class="absolute -top-20 -left-20 w-96 h-96 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-0 w-96 h-96 bg-teal-100/60 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Column: Brand Value Proposition -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-brand-mint border border-brand-mintBorder text-brand-greenDark text-xs sm:text-sm font-bold shadow-sm">
+                        <span class="flex h-2.5 w-2.5 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-green"></span>
+                        </span>
+                        <span>Artisans Spécialistes Toiture en Martinique (972)</span>
+                    </div>
+
+                    <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[52px] text-brand-charcoal leading-[1.12] tracking-tight">
+                        Redonnez <span class="text-brand-green">Vie, Couleur et Étanchéité</span> à Votre Toiture en Martinique
+                    </h1>
+
+                    <p class="text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Stoppez définitivement la rouille, les fuites et les mousses noires. <strong>Net'Toit Rénov</strong> protège votre maison contre le soleil tropical et l'air salin grâce à la <strong>projection haute pression Airless</strong>, au traitement anti-corrosion des visseries et au démoussage professionnel.
+                    </p>
+
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#simulateur" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-brand-green to-brand-greenLight hover:from-brand-greenDark hover:to-brand-green text-white font-heading font-bold text-base sm:text-lg shadow-xl shadow-brand-green/25 hover:scale-[1.02] transition-all flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Obtenir mon Devis Gratuit</span>
+                        </a>
+                        <a href="#avant-apres" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white hover:bg-brand-mint text-brand-charcoal border-2 border-brand-green/30 hover:border-brand-green font-heading font-bold text-base sm:text-lg shadow-sm transition-all flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-arrows-left-right text-brand-green"></i>
+                            <span>Tester nos 9 Avant / Après</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-4 grid grid-cols-3 gap-3 sm:gap-5 border-t border-slate-200/80 text-left">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-mint border border-brand-mintBorder flex items-center justify-center text-brand-green shrink-0">
+                                <i class="fa-solid fa-spray-can-sparkles"></i>
+                            </div>
+                            <div class="text-xs sm:text-sm">
+                                <div class="font-bold text-brand-charcoal">Peinture Airless</div>
+                                <div class="text-slate-500">Finition tendue & durable</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-mint border border-brand-mintBorder flex items-center justify-center text-brand-green shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div class="text-xs sm:text-sm">
+                                <div class="font-bold text-brand-charcoal">Anti-Rouille 972</div>
+                                <div class="text-slate-500">Spécial climat marin</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-mint border border-brand-mintBorder flex items-center justify-center text-brand-green shrink-0">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div class="text-xs sm:text-sm">
+                                <div class="font-bold text-brand-charcoal">Déplacement 0€</div>
+                                <div class="text-slate-500">Sur toute l'île</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Hero Real Project Card with Vector Logo Badge -->
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl p-3 bg-white border-2 border-brand-mintBorder shadow-2xl relative">
+                        <!-- Floating Official Logo Pill -->
+                        <div class="absolute -top-5 left-6 z-30 bg-white px-4 py-2 rounded-2xl shadow-lg border border-slate-200 flex items-center gap-2.5 animate-float">
+                            <img id="hero-logo-img" src="1000069960.jpg" alt="Net'Toit Rénov" class="h-8 w-auto object-contain hidden" onload="showUploadedLogo(this)" onerror="this.classList.add('hidden')">
+                            <svg id="hero-logo-svg" viewBox="0 0 500 380" class="h-7 w-auto">
+                                <polygon points="18,225 84,132 246,132 152,264 98,186 44,225" fill="#33373B"/>
+                                <rect x="64" y="198" width="13" height="13" fill="#21836A"/><rect x="81" y="198" width="13" height="13" fill="#21836A"/><rect x="64" y="215" width="13" height="13" fill="#21836A"/><rect x="81" y="215" width="13" height="13" fill="#21836A"/>
+                                <polygon points="158,274 288,88 408,88 225,352" fill="#5D616A"/>
+                                <polygon points="228,365 422,90 490,192 465,192 422,128 242,376" fill="#21836A"/>
+                                <rect x="408" y="166" width="14" height="14" fill="#21836A"/><rect x="426" y="166" width="14" height="14" fill="#21836A"/><rect x="408" y="184" width="14" height="14" fill="#21836A"/><rect x="426" y="184" width="14" height="14" fill="#21836A"/>
+                            </svg>
+                            <span class="text-xs font-heading font-extrabold text-brand-green uppercase tracking-wider">NET'TOIT RÉNOV • 972</span>
+                        </div>
+
+                        <!-- Featured Visual Collage Preview (Never broken: dynamic image or ultra-crisp canvas) -->
+                        <div class="rounded-2xl overflow-hidden relative aspect-[4/4.3] bg-slate-900 group cursor-pointer" onclick="document.getElementById('avant-apres').scrollIntoView({behavior: 'smooth'})">
+                            <img id="hero-showcase-img" alt="Rénovation Toiture Avant Après Net'Toit Rénov" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Top Badge (Avant) -->
+                            <div class="absolute top-3 right-3 bg-red-600/95 text-white text-[11px] font-heading font-bold px-3 py-1 rounded-lg shadow">
+                                HAUT : AVANT (Traitement des vis & rouille)
+                            </div>
+
+                            <!-- Middle Divider Callout -->
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-green text-white px-4 py-2 rounded-full font-heading font-bold text-xs shadow-xl border-2 border-white flex items-center gap-2 whitespace-nowrap">
+                                <i class="fa-solid fa-arrows-left-right animate-pulse"></i>
+                                <span>Glisser nos 9 Avant / Après</span>
+                            </div>
+
+                            <!-- Bottom Badge (Après) -->
+                            <div class="absolute bottom-16 right-3 bg-brand-green/95 text-white text-[11px] font-heading font-bold px-3 py-1 rounded-lg shadow">
+                                BAS : APRÈS (Résine Airless Haute Pression)
+                            </div>
+
+                            <!-- Artisans Footer Bar -->
+                            <div class="absolute bottom-2 inset-x-2 bg-white/95 backdrop-blur-md rounded-xl p-3 border border-slate-200 flex items-center justify-between shadow-lg">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="w-9 h-9 rounded-lg bg-brand-green text-white flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-medal"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-[11px] text-slate-500 font-medium">Vos artisans en Martinique</div>
+                                        <div class="text-xs sm:text-sm font-bold text-brand-charcoal">Alfred Mouche & Mathias Musset</div>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-brand-green">97280 Le Vauclin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Key Figures Banner -->
+            <div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="pro-card rounded-2xl p-5 sm:p-6 text-center bg-white">
+                    <div class="font-heading font-black text-3xl sm:text-4xl text-brand-green mb-1">9+</div>
+                    <div class="text-sm font-bold text-brand-charcoal">Chantiers Démontrés</div>
+                    <div class="text-xs text-slate-500 mt-0.5">Tôles, Bac Acier & Tuiles 972</div>
+                </div>
+                <div class="pro-card rounded-2xl p-5 sm:p-6 text-center bg-white">
+                    <div class="font-heading font-black text-3xl sm:text-4xl text-brand-green mb-1">Airless</div>
+                    <div class="text-sm font-bold text-brand-charcoal">Haute Pression Pro</div>
+                    <div class="text-xs text-slate-500 mt-0.5">Adhérence & Finition Parfaite</div>
+                </div>
+                <div class="pro-card rounded-2xl p-5 sm:p-6 text-center bg-white">
+                    <div class="font-heading font-black text-3xl sm:text-4xl text-brand-green mb-1">3x</div>
+                    <div class="text-sm font-bold text-brand-charcoal">Plus Économique</div>
+                    <div class="text-xs text-slate-500 mt-0.5">Qu'une réfection complète</div>
+                </div>
+                <div class="pro-card rounded-2xl p-5 sm:p-6 text-center bg-white">
+                    <div class="font-heading font-black text-3xl sm:text-4xl text-brand-green mb-1">Gratuit</div>
+                    <div class="text-sm font-bold text-brand-charcoal">Diagnostic sur Place</div>
+                    <div class="text-xs text-slate-500 mt-0.5">Devis rapide sous 24h/48h</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION AVANT / APRÈS AVEC LES 9 CHANTIERS ET UPLOAD 1-CLIC -->
+    <section id="avant-apres" class="py-20 bg-slate-50 border-y border-slate-200/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-8 reveal">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-mint border border-brand-mintBorder text-brand-greenDark font-heading font-bold text-xs uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Comparateur Interactif Avant / Après</span>
+                </div>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-brand-charcoal">
+                    Découvrez nos <span class="text-brand-green">9 Transformations en Martinique</span>
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    Faites glisser le curseur central de gauche à droite pour comparer l'état du toit <strong>Avant</strong> et le résultat <strong>Après</strong> notre passage.
+                </p>
+
+                <!-- Action Bar to Load Real Photos from Phone/PC in 1 Click -->
+                <div class="mt-5 inline-flex flex-wrap items-center justify-center gap-3 p-2.5 rounded-2xl bg-white border-2 border-brand-mintBorder shadow-sm">
+                    <label for="bulk-photo-input" class="cursor-pointer px-4 py-2.5 rounded-xl bg-brand-green hover:bg-brand-greenDark text-white font-heading font-bold text-xs sm:text-sm shadow transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Charger mes photos depuis ma galerie (1 clic)</span>
+                    </label>
+                    <button type="button" onclick="invertCurrentProjectOrder()" class="px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-brand-mint text-brand-charcoal font-heading font-bold text-xs sm:text-sm border border-slate-200 transition-all flex items-center gap-1.5" title="Permuter l'image Avant et l'image Après sur ce chantier">
+                        <i class="fa-solid fa-rotate text-brand-green"></i>
+                        <span>Inverser Avant / Après</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 9 Project Quick Selector Pills -->
+            <div class="flex items-center gap-2.5 overflow-x-auto pb-4 mb-6 no-scrollbar reveal" id="project-tabs">
+                <!-- Populated dynamically by JavaScript for all 9 projects -->
+            </div>
+
+            <!-- MAIN INTERACTIVE SLIDER VIEWER -->
+            <div class="grid lg:grid-cols-12 gap-8 items-center mb-16 reveal">
+                
+                <!-- Left 8 Cols: Interactive Split Comparator -->
+                <div class="lg:col-span-8">
+                    <div class="bg-white p-2.5 sm:p-3 rounded-3xl border-2 border-brand-mintBorder shadow-xl">
+                        <div id="ba-slider" class="ba-slider-wrapper rounded-2xl h-[320px] sm:h-[450px] w-full relative">
+                            
+                            <!-- AFTER LAYER (Full Width Background) -->
+                            <div class="w-full h-full relative">
+                                <img id="ba-after-img" alt="Après rénovation Net'Toit Rénov" class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- BEFORE LAYER (Clipped by Slider Width) -->
+                            <div id="ba-before-clip" class="ba-before-clip">
+                                <img id="ba-before-img" alt="Avant rénovation Net'Toit Rénov" class="h-full max-w-none object-cover">
+                            </div>
+
+                            <!-- Top Left AVANT Badge -->
+                            <div class="absolute top-3.5 left-3.5 z-30 pointer-events-none">
+                                <span class="bg-red-600/95 text-white px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-heading font-bold shadow-lg flex items-center gap-1.5 border border-white/30">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>AVANT</span>
+                                </span>
+                            </div>
+
+                            <!-- Top Right APRÈS Badge -->
+                            <div class="absolute top-3.5 right-3.5 z-30 pointer-events-none">
+                                <span class="bg-brand-green/95 text-white px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-heading font-bold shadow-lg flex items-center gap-1.5 border border-white/30">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>APRÈS NET'TOIT RÉNOV</span>
+                                </span>
+                            </div>
+
+                            <!-- Bottom Action Buttons inside Slider -->
+                            <div class="absolute bottom-3.5 right-3.5 z-30 flex items-center gap-2">
+                                <button type="button" onclick="invertCurrentProjectOrder()" class="bg-white/95 hover:bg-brand-mint text-brand-charcoal px-3 py-2 rounded-xl text-xs font-heading font-bold shadow-lg border border-slate-200 transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrows-up-down text-brand-green"></i>
+                                    <span class="hidden sm:inline">Inverser Haut/Bas</span>
+                                </button>
+                                <button type="button" onclick="openCurrentInLightbox()" class="bg-white/95 hover:bg-brand-green hover:text-white text-brand-charcoal px-3.5 py-2 rounded-xl text-xs font-heading font-bold shadow-lg border border-slate-200 transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    <span>Vue Complète Haut / Bas</span>
+                                </button>
+                            </div>
+
+                            <!-- Center Drag Handle -->
+                            <div id="ba-divider" class="ba-divider-line">
+                                <div class="ba-handle-knob">
+                                    <i class="fa-solid fa-arrows-left-right text-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 4 Cols: Active Project Details Card -->
+                <div class="lg:col-span-4">
+                    <div class="pro-card rounded-3xl p-6 sm:p-8 bg-white border-2 border-brand-mintBorder space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span id="active-proj-tag" class="px-3 py-1 rounded-full bg-brand-mint text-brand-greenDark font-heading font-bold text-xs uppercase">
+                                Chantier #1 • Martinique
+                            </span>
+                            <span id="active-proj-counter" class="text-xs font-bold text-slate-400">1 / 9</span>
+                        </div>
+
+                        <h3 id="active-proj-title" class="font-heading font-extrabold text-2xl text-brand-charcoal leading-snug">
+                            Démoussage & Hydrofuge Toiture Tuiles
+                        </h3>
+
+                        <p id="active-proj-desc" class="text-slate-600 text-sm leading-relaxed">
+                            Remise à neuf intégrale de cette grande toiture en tuiles terre cuite envahie par les mousses noires tropicales.
+                        </p>
+
+                        <div class="space-y-2.5 pt-3 border-t border-slate-100">
+                            <div class="text-xs font-bold uppercase tracking-wider text-brand-green">Travaux réalisés :</div>
+                            <ul id="active-proj-bullets" class="space-y-2 text-sm text-brand-charcoal font-medium">
+                                <!-- Populated via JS -->
+                            </ul>
+                        </div>
+
+                        <!-- Replace single photo button -->
+                        <div class="pt-2">
+                            <label for="single-photo-input" class="w-full cursor-pointer py-2.5 px-3 rounded-xl bg-brand-mint/70 hover:bg-brand-mint text-brand-greenDark border border-brand-mintBorder text-xs font-heading font-bold flex items-center justify-center gap-2 transition-all">
+                                <i class="fa-solid fa-camera-rotate"></i>
+                                <span>Remplacer la photo de ce chantier (#<span id="replace-idx-label">1</span>)</span>
+                            </label>
+                            <input type="file" id="single-photo-input" accept="image/*" class="hidden" onchange="handleSingleProjectUpload(event)">
+                        </div>
+
+                        <!-- Next / Prev Project Navigation -->
+                        <div class="pt-2 flex items-center gap-3">
+                            <button type="button" onclick="prevProject()" class="px-4 py-3 rounded-xl bg-slate-100 hover:bg-brand-mint text-brand-charcoal font-bold text-sm transition-all">
+                                <i class="fa-solid fa-chevron-left mr-1"></i> Préc.
+                            </button>
+                            <button type="button" onclick="nextProject()" class="flex-1 py-3 px-4 rounded-xl bg-brand-green hover:bg-brand-greenDark text-white font-heading font-bold text-sm shadow-md transition-all">
+                                Chantier Suivant <i class="fa-solid fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMPLETE 9-PHOTO GALLERY GRID -->
+            <div class="reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                    <div>
+                        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-charcoal">
+                            Galerie Complète de nos 9 Chantiers (Montages Haut / Bas)
+                        </h3>
+                        <p class="text-sm text-slate-500">
+                            Cliquez sur un chantier pour le tester dans le comparateur ci-dessus ou l'agrandir en plein écran.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Automatically populated with the 9 projects -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOS PRESTATIONS SPÉCIALISÉES -->
+    <section id="prestations" class="py-20 lg:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-mint text-brand-greenDark font-heading font-bold text-xs uppercase tracking-widest mb-3">
+                    Savoir-Faire & Protection Tropicale
+                </div>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-brand-charcoal">
+                    Nos Prestations pour Votre <span class="text-brand-green">Toiture en Martinique</span>
+                </h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Que votre toit soit en tôle ondulée, en bac acier ou en tuiles terre cuite, nous appliquons le traitement adapté aux fortes chaleurs et à l'air marin du 972.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Prestation 1 -->
+                <div class="pro-card rounded-3xl p-7 sm:p-9 relative overflow-hidden group reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green text-white flex items-center justify-center text-2xl shadow-lg shadow-brand-green/25 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-brand-mint text-brand-greenDark text-xs font-bold mb-3">
+                        Spécialité N°1 • Tôles Ondulées & Bac Acier
+                    </span>
+                    <h3 class="font-heading font-extrabold text-2xl text-brand-charcoal mb-3">
+                        1. Peinture Toiture Airless Haute Pression
+                    </h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Application au pistolet <strong>Airless haute pression</strong> de résines acryliques et élastomères professionnelles. Le revêtement épouse chaque ondulation de la tôle sans coulure, reflète les rayons solaires et redonne l'éclat du neuf (Vert Martinique, Rouge Tuile, Gris Clair, Terracotta).
+                    </p>
+                    <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-brand-charcoal">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Finition tendue homogène</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Barrière anti-UV & sel</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Confort thermique accru</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Sans dépose de toiture</div>
+                    </div>
+                </div>
+
+                <!-- Prestation 2 -->
+                <div class="pro-card rounded-3xl p-7 sm:p-9 relative overflow-hidden group reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green text-white flex items-center justify-center text-2xl shadow-lg shadow-brand-green/25 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-brand-mint text-brand-greenDark text-xs font-bold mb-3">
+                        Protection Cyclonique & Anti-Rouille
+                    </span>
+                    <h3 class="font-heading font-extrabold text-2xl text-brand-charcoal mb-3">
+                        2. Traitement Anti-Corrosion & Étanchéité des Vis
+                    </h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Comme visible sur nos photos de chantier, nous traitons minutieusement <strong>chaque tête de vis, cavalier et chevauchement de tôle</strong> avec un convertisseur de rouille et un mastic/résine d'étanchéité avant la mise en peinture intégrale.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-brand-charcoal">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Stoppe la perforation</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Étanchéité de chaque vis</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Primaire anti-oxydation</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Remplacement tôles abîmées</div>
+                    </div>
+                </div>
+
+                <!-- Prestation 3 -->
+                <div class="pro-card rounded-3xl p-7 sm:p-9 relative overflow-hidden group reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green text-white flex items-center justify-center text-2xl shadow-lg shadow-brand-green/25 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-brand-mint text-brand-greenDark text-xs font-bold mb-3">
+                        Spécial Tuiles Terre Cuite & Façades
+                    </span>
+                    <h3 class="font-heading font-extrabold text-2xl text-brand-charcoal mb-3">
+                        3. Démoussage, Nettoyage Haute Pression & Hydrofuge
+                    </h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Vos tuiles sont noircies par l'humidité tropicale et les lichens ? Nous réalisons un décapage maîtrisé suivi d'un <strong>traitement fongicide et hydrofuge incolore ou teinté</strong> qui redonne aux tuiles leur couleur terre cuite éclatante d'origine.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-brand-charcoal">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Élimine traces noires & mousses</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Effet perlant auto-nettoyant</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Préserve la porosité</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Nettoyage gouttières inclus</div>
+                    </div>
+                </div>
+
+                <!-- Prestation 4 -->
+                <div class="pro-card rounded-3xl p-7 sm:p-9 relative overflow-hidden group reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green text-white flex items-center justify-center text-2xl shadow-lg shadow-brand-green/25 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-brand-mint text-brand-greenDark text-xs font-bold mb-3">
+                        Zéro Infiltration d'Eau
+                    </span>
+                    <h3 class="font-heading font-extrabold text-2xl text-brand-charcoal mb-3">
+                        4. Étanchéité EPDM, Faîtages, Solins & Gouttières
+                    </h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Recherche et réparation durable des fuites aux points sensibles : jonctions mur/toiture (solins), faîtages, noues, chéneaux et toits plats par application de <strong>membrane EPDM</strong> ou résine fibrée haute élasticité.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-brand-charcoal">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Membrane EPDM 300% souple</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Étanchéité solins & rives</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Réparation fuites urgentes</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-green"></i> Résiste aux fortes averses</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTRE MÉTHODE EN 4 ÉTAPES -->
+    <section id="methode" class="py-16 lg:py-20 bg-brand-mint/50 border-y border-brand-mintBorder/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <span class="text-brand-green font-heading font-bold text-xs uppercase tracking-widest">Protocole Rigoureux Net'Toit Rénov</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-charcoal mt-2">
+                    Les 4 Étapes d'une Rénovation Durable
+                </h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+                <div class="bg-white p-6 rounded-2xl border border-brand-mintBorder shadow-sm relative">
+                    <div class="w-10 h-10 rounded-xl bg-brand-green text-white font-heading font-black flex items-center justify-center text-lg mb-4">1</div>
+                    <h3 class="font-heading font-bold text-lg text-brand-charcoal mb-2">Décapage Haute Pression</h3>
+                    <p class="text-sm text-slate-600">Nettoyage intégral du toit pour éliminer sel marin, mousses, poussières et anciennes peintures écaillées.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-brand-mintBorder shadow-sm relative">
+                    <div class="w-10 h-10 rounded-xl bg-brand-green text-white font-heading font-black flex items-center justify-center text-lg mb-4">2</div>
+                    <h3 class="font-heading font-bold text-lg text-brand-charcoal mb-2">Traitement Rouille & Vis</h3>
+                    <p class="text-sm text-slate-600">Application d'anti-rouille ciblé sur les zones oxydées et étanchéification de toutes les têtes de vis et solins.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-brand-mintBorder shadow-sm relative">
+                    <div class="w-10 h-10 rounded-xl bg-brand-green text-white font-heading font-black flex items-center justify-center text-lg mb-4">3</div>
+                    <h3 class="font-heading font-bold text-lg text-brand-charcoal mb-2">Projection Airless Bi-Couche</h3>
+                    <p class="text-sm text-slate-600">Pulvérisation haute pression en 2 couches croisées pour un film protecteur épais, souple et 100% étanche.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-brand-mintBorder shadow-sm relative">
+                    <div class="w-10 h-10 rounded-xl bg-brand-green text-white font-heading font-black flex items-center justify-center text-lg mb-4">4</div>
+                    <h3 class="font-heading font-bold text-lg text-brand-charcoal mb-2">Contrôle & Finitions</h3>
+                    <p class="text-sm text-slate-600">Inspection finale de l'étanchéité avec vous, nettoyage complet des abords et photos Avant/Après par drone ou vue haute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULATEUR DE DEVIS INTERACTIF (VERT & BLANC) -->
+    <section id="simulateur" class="py-20 lg:py-28 bg-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 reveal">
+                <span class="px-4 py-1.5 rounded-full bg-brand-green text-white text-xs font-heading font-bold uppercase tracking-wider shadow-sm">
+                    Devis & Déplacement 100% Gratuits en Martinique
+                </span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-brand-charcoal mt-4">
+                    Estimez votre chantier en <span class="text-brand-green">30 secondes</span>
+                </h2>
+                <p class="text-slate-600 mt-3 max-w-2xl mx-auto">
+                    Sélectionnez votre besoin et la couleur souhaitée, puis recevez votre chiffrage directement par WhatsApp ou E-mail avec <strong>Alfred Mouche & Mathias Musset</strong>.
+                </p>
+            </div>
+
+            <div class="pro-card rounded-3xl p-6 sm:p-10 bg-white border-2 border-brand-green/30 shadow-2xl reveal">
+                <form id="quote-form" onsubmit="return false;" class="space-y-8">
+                    
+                    <!-- Step 1: Type de Travaux -->
+                    <div>
+                        <label class="block font-heading font-bold text-lg text-brand-charcoal mb-4">
+                            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-green text-white text-sm mr-2">1</span>
+                            Quelle prestation souhaitez-vous ?
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            <button type="button" onclick="selectService(this, 'Peinture Toiture Airless & Anti-Rouille')" class="service-choice text-left p-4 rounded-2xl border-2 border-brand-green bg-brand-mint/70 transition-all flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-brand-green text-white flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-spray-can-sparkles"></i>
+                                </div>
+                                <div>
+                                    <div class="font-heading font-bold text-brand-charcoal text-sm sm:text-base">Peinture Airless & Anti-Rouille</div>
+                                    <div class="text-xs text-slate-600">Tôle ondulée ou bac acier</div>
+                                </div>
+                            </button>
+
+                            <button type="button" onclick="selectService(this, 'Démoussage & Hydrofuge Toiture Tuiles')" class="service-choice text-left p-4 rounded-2xl border-2 border-slate-200 bg-slate-50 hover:border-brand-green/50 transition-all flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-white border border-slate-200 text-brand-green flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+                                <div>
+                                    <div class="font-heading font-bold text-brand-charcoal text-sm sm:text-base">Démoussage & Hydrofuge Tuiles</div>
+                                    <div class="text-xs text-slate-500">Remise à neuf tuiles terre cuite</div>
+                                </div>
+                            </button>
+
+                            <button type="button" onclick="selectService(this, 'Étanchéité Fixations, Solins ou EPDM')" class="service-choice text-left p-4 rounded-2xl border-2 border-slate-200 bg-slate-50 hover:border-brand-green/50 transition-all flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-white border border-slate-200 text-brand-green flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-droplet-slash"></i>
+                                </div>
+                                <div>
+                                    <div class="font-heading font-bold text-brand-charcoal text-sm sm:text-base">Étanchéité & Stop Fuite / EPDM</div>
+                                    <div class="text-xs text-slate-500">Visseries, faîtages, solins, toit plat</div>
+                                </div>
+                            </button>
+
+                            <button type="button" onclick="selectService(this, 'Remplacement & Pose de Tôles')" class="service-choice text-left p-4 rounded-2xl border-2 border-slate-200 bg-slate-50 hover:border-brand-green/50 transition-all flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-white border border-slate-200 text-brand-green flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-hammer"></i>
+                                </div>
+                                <div>
+                                    <div class="font-heading font-bold text-brand-charcoal text-sm sm:text-base">Remplacement / Pose de Tôles</div>
+                                    <div class="text-xs text-slate-500">Tôles perforées & visserie cyclonique</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Choix de la Teinte / Finition -->
+                    <div>
+                        <label class="block font-heading font-bold text-lg text-brand-charcoal mb-3">
+                            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-green text-white text-sm mr-2">2</span>
+                            Teinte ou finition souhaitée :
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <button type="button" onclick="selectColor(this, 'Rouge Tuile / Terracotta')" class="color-choice p-3 rounded-xl border-2 border-brand-green bg-brand-mint/50 flex items-center gap-2.5 text-left text-xs sm:text-sm font-bold text-brand-charcoal">
+                                <span class="w-6 h-6 rounded-full bg-[#C85A3B] border border-black/15 shrink-0"></span>
+                                <span>Rouge Tuile</span>
+                            </button>
+                            <button type="button" onclick="selectColor(this, 'Vert Martinique')" class="color-choice p-3 rounded-xl border-2 border-slate-200 bg-white hover:border-brand-green/50 flex items-center gap-2.5 text-left text-xs sm:text-sm font-bold text-brand-charcoal">
+                                <span class="w-6 h-6 rounded-full bg-[#4E8759] border border-black/15 shrink-0"></span>
+                                <span>Vert Martinique</span>
+                            </button>
+                            <button type="button" onclick="selectColor(this, 'Gris Clair Réflecteur')" class="color-choice p-3 rounded-xl border-2 border-slate-200 bg-white hover:border-brand-green/50 flex items-center gap-2.5 text-left text-xs sm:text-sm font-bold text-brand-charcoal">
+                                <span class="w-6 h-6 rounded-full bg-[#CBD5E1] border border-black/15 shrink-0"></span>
+                                <span>Gris Clair Anti-Chaleur</span>
+                            </button>
+                            <button type="button" onclick="selectColor(this, 'Incolore / Conseillez-moi')" class="color-choice p-3 rounded-xl border-2 border-slate-200 bg-white hover:border-brand-green/50 flex items-center gap-2.5 text-left text-xs sm:text-sm font-bold text-brand-charcoal">
+                                <span class="w-6 h-6 rounded-full bg-gradient-to-tr from-brand-green to-amber-500 border border-black/15 shrink-0"></span>
+                                <span>Autre / Conseil</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Surface Slider -->
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="surface-slider" class="font-heading font-bold text-lg text-brand-charcoal">
+                                <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-green text-white text-sm mr-2">3</span>
+                                Surface approximative de toiture :
+                            </label>
+                            <span id="surface-display" class="px-4 py-1.5 rounded-xl bg-brand-mint border border-brand-green text-brand-greenDark font-heading font-extrabold text-xl">
+                                130 m²
+                            </span>
+                        </div>
+                        <input type="range" id="surface-slider" min="40" max="500" step="10" value="130" class="w-full my-2">
+                        <div class="flex justify-between text-xs text-slate-500 font-medium">
+                            <span>40 m² (Annexe / Carbet)</span>
+                            <span>140 m² (Maison individuelle)</span>
+                            <span>280 m² (Grande Villa)</span>
+                            <span>500+ m² (Bâtiment)</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Coordonnées & Commune -->
+                    <div>
+                        <label class="block font-heading font-bold text-lg text-brand-charcoal mb-4">
+                            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-brand-green text-white text-sm mr-2">4</span>
+                            Localisation du chantier & Vos coordonnées
+                        </label>
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Commune (Martinique) *</label>
+                                <select id="client-commune" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-300 text-brand-charcoal font-medium focus:border-brand-green focus:bg-white focus:outline-none">
+                                    <option value="Le Vauclin">Le Vauclin (97280)</option>
+                                    <option value="Le François">Le François (97240)</option>
+                                    <option value="Le Robert">Le Robert (97231)</option>
+                                    <option value="Le Lamentin">Le Lamentin (97232)</option>
+                                    <option value="Fort-de-France">Fort-de-France (97200)</option>
+                                    <option value="Ducos">Ducos (97224)</option>
+                                    <option value="Rivière-Salée">Rivière-Salée (97215)</option>
+                                    <option value="Sainte-Anne">Sainte-Anne (97227)</option>
+                                    <option value="Le Marin">Le Marin (97290)</option>
+                                    <option value="Les Trois-Îlets">Les Trois-Îlets (97229)</option>
+                                    <option value="Sainte-Luce">Sainte-Luce (97228)</option>
+                                    <option value="La Trinité">La Trinité (97220)</option>
+                                    <option value="Schœlcher">Schœlcher (97233)</option>
+                                    <option value="Autre commune (972)">Autre commune en Martinique</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Votre Nom / Prénom *</label>
+                                <input type="text" id="client-name" placeholder="Ex: M. ou Mme..." class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-300 text-brand-charcoal focus:border-brand-green focus:bg-white focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Votre Téléphone *</label>
+                                <input type="tel" id="client-phone" placeholder="Ex: 06 96 .. .. .." class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-300 text-brand-charcoal focus:border-brand-green focus:bg-white focus:outline-none">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Détails supplémentaires (facultatif)</label>
+                            <textarea id="client-notes" rows="2" placeholder="Ex: Toiture en tôle rouillée à repeindre, ou démoussage tuiles..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-brand-charcoal focus:border-brand-green focus:bg-white focus:outline-none"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Box -->
+                    <div id="form-feedback" class="hidden p-4 rounded-xl bg-brand-mint border border-brand-green text-brand-greenDark text-sm font-bold"></div>
+
+                    <!-- Submit Buttons -->
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                        <button type="button" onclick="sendViaWhatsApp()" class="flex-1 py-4 px-6 rounded-2xl bg-gradient-to-r from-brand-green to-brand-greenLight hover:from-brand-greenDark hover:to-brand-green text-white font-heading font-bold text-base sm:text-lg shadow-xl shadow-brand-green/25 flex items-center justify-center gap-3 transition-all">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Envoyer sur WhatsApp (06 96 89 09 51)</span>
+                        </button>
+                        <button type="button" onclick="sendViaEmail()" class="sm:w-auto py-4 px-6 rounded-2xl bg-slate-100 hover:bg-brand-mint border border-slate-300 text-brand-charcoal font-heading font-bold text-base flex items-center justify-center gap-2.5 transition-all">
+                            <i class="fa-solid fa-envelope text-brand-green"></i>
+                            <span>Envoyer par E-mail</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL POUR VOIR LES PHOTOS COMPLÈTES EN GRAND -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-2xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl border-2 border-brand-green" onclick="event.stopPropagation()">
+            <div class="flex items-center justify-between px-5 py-3.5 bg-brand-green text-white">
+                <div id="lightbox-title" class="font-heading font-bold text-sm sm:text-base">Aperçu Complet Avant / Après</div>
+                <button type="button" onclick="closeLightbox()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-3 bg-slate-900 max-h-[80vh] overflow-y-auto flex justify-center">
+                <img id="lightbox-img" src="" alt="Chantier Net'Toit Rénov" class="max-h-[74vh] w-auto object-contain rounded-xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (CHARCOAL & EMERALD GREEN WITH OFFICIAL VECTOR LOGO) -->
+    <footer id="contact" class="bg-brand-charcoal text-slate-300 pt-16 pb-24 lg:pb-12 border-t-4 border-brand-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: Official Logo & Info -->
+                <div class="space-y-4">
+                    <div class="inline-block bg-white p-2.5 rounded-2xl shadow-md">
+                        <img id="footer-logo-img" src="1000069960.jpg" alt="Logo Net'Toit Rénov" class="h-16 w-auto object-contain hidden" onload="showUploadedLogo(this)" onerror="this.classList.add('hidden')">
+                        <svg id="footer-logo-svg" viewBox="0 0 500 430" class="h-16 w-auto">
+                            <polygon points="18,225 84,132 246,132 152,264 98,186 44,225" fill="#33373B"/>
+                            <rect x="64" y="198" width="13" height="13" fill="#21836A"/><rect x="81" y="198" width="13" height="13" fill="#21836A"/><rect x="64" y="215" width="13" height="13" fill="#21836A"/><rect x="81" y="215" width="13" height="13" fill="#21836A"/>
+                            <polygon points="158,274 288,88 408,88 225,352" fill="#5D616A"/>
+                            <polygon points="228,365 422,90 490,192 465,192 422,128 242,376" fill="#21836A"/>
+                            <rect x="408" y="166" width="14" height="14" fill="#21836A"/><rect x="426" y="166" width="14" height="14" fill="#21836A"/><rect x="408" y="184" width="14" height="14" fill="#21836A"/><rect x="426" y="184" width="14" height="14" fill="#21836A"/>
+                            <text x="250" y="415" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="44" letter-spacing="3">
+                                <tspan fill="#33373B">NET’TOIT </tspan><tspan fill="#21836A">RÉNOV</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>Net'Toit Rénov</strong> — Votre spécialiste en rénovation de toiture, peinture Airless anti-corrosion, démoussage de tuiles et étanchéité en Martinique.
+                    </p>
+                    <div class="text-xs text-emerald-300 font-mono font-semibold">
+                        SIRET : RM 503 853 491
+                    </div>
+                </div>
+
+                <!-- Col 2: Contact Direct -->
+                <div class="space-y-3">
+                    <h4 class="font-heading font-bold text-white text-base uppercase tracking-wider">Vos Artisans (972)</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-user-shield text-brand-greenLight mt-1"></i>
+                            <span><strong>Alfred Mouche</strong> & <strong>Mathias Musset</strong></span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-greenLight mt-1"></i>
+                            <span>Chemin du Petit Macabou<br>97280 Le Vauclin, Martinique</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-greenLight"></i>
+                            <a href="tel:0696890951" class="text-white font-bold hover:text-brand-greenLight">06 96 89 09 51</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-greenLight"></i>
+                            <a href="mailto:nettoitrenov@gmail.com" class="hover:text-white">nettoitrenov@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Nos Savoir-Faire -->
+                <div class="space-y-3">
+                    <h4 class="font-heading font-bold text-white text-base uppercase tracking-wider">Nos Spécialités</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#avant-apres" class="hover:text-brand-greenLight">Galerie 9 Chantiers Avant / Après</a></li>
+                        <li><a href="#prestations" class="hover:text-brand-greenLight">Peinture Airless Tôle & Bac Acier</a></li>
+                        <li><a href="#prestations" class="hover:text-brand-greenLight">Traitement Anti-Rouille & Visseries</a></li>
+                        <li><a href="#prestations" class="hover:text-brand-greenLight">Démoussage & Hydrofuge Tuiles</a></li>
+                        <li><a href="#prestations" class="hover:text-brand-greenLight">Étanchéité Solins, Faîtages & EPDM</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Secteurs en Martinique -->
+                <div class="space-y-3">
+                    <h4 class="font-heading font-bold text-white text-base uppercase tracking-wider">Intervention 972</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Déplacement et diagnostic gratuits dans toutes les communes de Martinique :
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Le Vauclin</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Le François</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Le Robert</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Le Lamentin</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Fort-de-France</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Sainte-Anne</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Les Trois-Îlets</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs text-white">Ducos</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <div>© 2026 Net'Toit Rénov — Alfred Mouche & Mathias Musset. Tous droits réservés.</div>
+                <div class="text-emerald-400 font-semibold">Artisans Rénovation Toiture Martinique (972)</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-5 right-5 z-40">
+        <a href="https://wa.me/596696890951?text=Bonjour%20Net'Toit%20R%C3%A9nov%2C%20je%20souhaite%20un%20devis%20gratuit%20pour%20ma%20toiture%20en%20Martinique." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Direct" class="w-14 h-14 rounded-full bg-brand-green hover:bg-brand-greenLight text-white flex items-center justify-center text-3xl shadow-2xl border-2 border-white hover:scale-110 transition-all">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        /* =========================================================
+           1. CONFIGURATION DES 9 CHANTIERS AVEC L'ORDRE EXACT HAUT/BAS
+           ========================================================= */
+        const realProjects = [
+            {
+                id: 1,
+                fileName: "1000136013.jpg",
+                beforeHalf: "top",    // HAUT = Avant (tuiles noircies), BAS = Après (tuiles terre cuite propres)
+                afterHalf: "bottom",
+                shortLabel: "1. Villa Tuiles (Démoussage)",
+                tag: "Chantier #1 • Démoussage & Hydrofuge Tuiles",
+                title: "Démoussage Complet & Hydrofuge sur Grande Villa en Tuiles",
+                desc: "Cette grande toiture en tuiles terre cuite était envahie par les mousses noires et lichens tropicaux. Après notre décapage maîtrisé et traitement hydrofuge, le toit a retrouvé son éclat rouge brique d'origine.",
+                bullets: [
+                    "Décapage haute pression adapté aux tuiles terre cuite",
+                    "Traitement fongicide curatif anti-retour de mousses",
+                    "Protection hydrofuge longue durée contre les pluies tropicales"
+                ],
+                simStyle: { type: "tiles", beforeColor: "#4A2E27", beforeSpots: "#1C1917", afterColor: "#D95D39" }
+            },
+            {
+                id: 2,
+                fileName: "1000136009.jpg",
+                beforeHalf: "top",    // HAUT = Avant (tôle bleue + antirouille marron sur vis), BAS = Après (rouge tuile)
+                afterHalf: "bottom",
+                shortLabel: "2. Tôle Bleue → Rouge Tuile",
+                tag: "Chantier #2 • Anti-Rouille Vis & Airless",
+                title: "Traitement Anti-Corrosion des Visseries & Peinture Airless Rouge Tuile",
+                desc: "Sur cette toiture en tôle bleue, toutes les lignes de visseries commençaient à s'oxyder. Chaque point de fixation a reçu une passe de convertisseur anti-rouille avant l'application de deux couches croisées de résine Airless Rouge Tuile.",
+                bullets: [
+                    "Brossage et application de primaire anti-rouille sur chaque ligne de vis",
+                    "Traitement renforcé des arêtiers et faîtages",
+                    "Finition Airless haute résistance Rouge Terracotta"
+                ],
+                simStyle: { type: "corrugated_hip", beforeColor: "#3B82C4", rustDots: "#8F4724", afterColor: "#C86D51" }
+            },
+            {
+                id: 3,
+                fileName: "1000135998.jpg",
+                beforeHalf: "bottom", // HAUT = Après (vert), BAS = Avant (rouge rouillé avec lucarne)
+                afterHalf: "top",
+                shortLabel: "3. Lucarne & Solins Verts",
+                tag: "Chantier #3 • Étanchéité Solins & Airless Vert",
+                title: "Rénovation Toiture avec Lucarne & Étanchéité des Solins en Vert",
+                desc: "Les jonctions entre la toiture et le chien-assis (solins) sont les premières sources de fuites. Nous avons repris toute l'étanchéité du contour maçonné et projeté une résine Airless Vert Martinique imperméable.",
+                bullets: [
+                    "Reprise d'étanchéité sur les solins et bavettes métalliques",
+                    "Préparation et traitement anti-corrosion des tôles usées",
+                    "Application Airless uniforme sur tôle, rives et solins"
+                ],
+                simStyle: { type: "dormer", beforeColor: "#9E3B33", beforeSpots: "#94A3B8", afterColor: "#4E8759" }
+            },
+            {
+                id: 4,
+                fileName: "1000135987.jpg",
+                beforeHalf: "bottom", // HAUT = Après (gris clair), BAS = Avant (rouge rouillé avec parabole)
+                afterHalf: "top",
+                shortLabel: "4. Gris Clair Anti-Chaleur",
+                tag: "Chantier #4 • Confort Thermique & Étanchéité",
+                title: "Passage d'une Tôle Rouillée à un Revêtement Gris Clair Réflecteur",
+                desc: "L'ancien toit rouge subissait une forte corrosion sur les pentes. Le client a opté pour une rénovation Airless en Gris Clair lumineux qui protège durablement la tôle tout en réduisant la chaleur sous le toit.",
+                bullets: [
+                    "Neutralisation complète des plaques de rouille",
+                    "Étanchéité renforcée sur toutes les fixations",
+                    "Peinture Airless Gris Clair à fort pouvoir réfléchissant solaire"
+                ],
+                simStyle: { type: "corrugated_ridge", beforeColor: "#A63A32", beforeSpots: "#5C2218", afterColor: "#CBD5E1" }
+            },
+            {
+                id: 5,
+                fileName: "1000135978.jpg",
+                beforeHalf: "bottom", // HAUT = Après (orange tuile), BAS = Avant (tôle blanchie maison créole bois)
+                afterHalf: "top",
+                shortLabel: "5. Villa Créole & Carbet",
+                tag: "Chantier #5 • Rénovation Villa Complète",
+                title: "Mise en Beauté et Protection de Toiture Villa Bois & Carbet",
+                desc: "Transformation spectaculaire de cette villa en bois avec chauffe-eau solaire : l'ancienne toiture blanchie et ternie par le sel et les UV a été décapée, traitée et repeinte à l'Airless en Orange Tuile éclatant.",
+                bullets: [
+                    "Nettoyage complet autour du chauffe-eau solaire",
+                    "Traitement des rives, faîtages et gouttières",
+                    "Valorisation immédiate du patrimoine immobilier"
+                ],
+                simStyle: { type: "creole_villa", beforeColor: "#C8C6B8", beforeSpots: "#8C8A7E", afterColor: "#E06D44" }
+            },
+            {
+                id: 6,
+                fileName: "1000135980.jpg",
+                beforeHalf: "bottom", // HAUT = Après (rouge tuile), BAS = Avant (gris délavé/rouillé vue plongeante)
+                afterHalf: "top",
+                shortLabel: "6. Faîtage & Versants Tôle",
+                tag: "Chantier #6 • Protection Haute Résistance",
+                title: "Remise à Neuf Complète Faîtage & Versants en Tôle Ondulée",
+                desc: "Cette toiture présentait une peinture farineuse brûlée par le soleil et de multiples départs de rouille. Après préparation mécanique et chimique, la projection Airless offre une enveloppe protectrice continue.",
+                bullets: [
+                    "Élimination de l'ancienne peinture farinante au nettoyeur haute pression",
+                    "Traitement anti-corrosion des têtes de vis et faîtières",
+                    "Finition Airless Terre Cuite satinée haute durabilité"
+                ],
+                simStyle: { type: "corrugated_ridge", beforeColor: "#B8B9B2", beforeSpots: "#703629", afterColor: "#C86446" }
+            },
+            {
+                id: 7,
+                fileName: "1000135995.jpg",
+                beforeHalf: "top",    // HAUT = Avant (tôle rouge/noire avec points blancs sur vis), BAS = Après (vert amande)
+                afterHalf: "bottom",
+                shortLabel: "7. Maison Plain-Pied → Vert",
+                tag: "Chantier #7 • Étanchéité Vis & Airless Vert",
+                title: "Étanchéité des Fixations & Peinture Airless Vert Martinique",
+                desc: "Sur cette maison de plain-pied, chaque tête de vis a d'abord reçu un traitement d'étanchéité anti-infiltration (points blancs visibles sur la partie Avant) avant la projection de 2 couches de résine Airless verte.",
+                bullets: [
+                    "Lavage haute pression intégral de la toiture",
+                    "Étanchéification minutieuse de chaque fixation et visserie",
+                    "Projection Airless bi-couche coloris Vert Amande / Martinique"
+                ],
+                simStyle: { type: "bungalow", beforeColor: "#993D3D", whiteDots: true, afterColor: "#659B6E" }
+            },
+            {
+                id: 8,
+                fileName: "1000135997.jpg",
+                beforeHalf: "top",    // HAUT = Avant (rouge délavé), BAS = Après (vert forêt satiné)
+                afterHalf: "bottom",
+                shortLabel: "8. Grande Tôle Vert Forêt",
+                tag: "Chantier #8 • Changement de Teinte Airless",
+                title: "Rénovation & Changement de Couleur sur Grande Toiture Tôle",
+                desc: "Démonstration de la qualité de recouvrement de nos pompes Airless professionnelles : chaque ondulation et chaque cavalier de fixation est parfaitement enveloppé par la résine protectrice verte.",
+                bullets: [
+                    "Dégraissage et décapage complet de la surface",
+                    "Vérification et serrage des fixations avec cavaliers",
+                    "Double couche croisée à l'Airless sans aucune trace de reprise"
+                ],
+                simStyle: { type: "corrugated_close", beforeColor: "#A85D5D", beforeSpots: "#475569", afterColor: "#588B5C" }
+            },
+            {
+                id: 9,
+                fileName: "1000135982.jpg",
+                beforeHalf: "top",    // HAUT = Avant (bac acier très rouillé), BAS = Après (rouge tuile neuf)
+                afterHalf: "bottom",
+                shortLabel: "9. Sauvetage Bac Acier Rouillé",
+                tag: "Chantier #9 • Sauvetage Anti-Corrosion Extrême",
+                title: "Sauvetage Intégral d'une Toiture Bac Acier Fortement Corrodée",
+                desc: "Les tôles bac acier de cette toiture étaient sévèrement attaquées par la rouille. Plutôt qu'un remplacement complet très coûteux, notre protocole anti-corrosion et résine Airless a stoppé l'oxydation et remis le toit à neuf.",
+                bullets: [
+                    "Décapage des plaques de rouille non adhérentes",
+                    "Application d'un bloqueur de rouille haute pénétration",
+                    "Double couche de résine élastomère Airless Terracotta"
+                ],
+                simStyle: { type: "trapezoidal_rust", beforeColor: "#914146", beforeSpots: "#6E260E", afterColor: "#C86943" }
+            }
+        ];
+
+        // Stockage mémoire des images découpées pour chaque chantier : { fullDataUrl, beforeDataUrl, afterDataUrl, isRealPhoto }
+        const projectMediaStore = {};
+        let customLogoDataUrl = null;
+        let currentProjectIndex = 0;
+
+        /* =========================================================
+           2. GÉNÉRATEUR GRAPHIQUE HAUTE DÉFINITION DE SECOURS (ZÉRO IMAGE CASSÉE)
+           Si le bac à sable bloque les fichiers locaux avant que l'utilisateur
+           ne clique sur "Charger mes photos", ce moteur dessine fidèlement chaque chantier !
+           ========================================================= */
+        function generateRealisticRoofCanvas(project, part) {
+            const canvas = document.createElement('canvas');
+            canvas.width = 900;
+            canvas.height = 560;
+            const ctx = canvas.getContext('2d');
+            const s = project.simStyle;
+            const isBefore = (part === 'before');
+            const mainColor = isBefore ? s.beforeColor : s.afterColor;
+
+            // Fond Ciel & Végétation Tropicale Martinique
+            const skyGrad = ctx.createLinearGradient(0, 0, 0, 180);
+            skyGrad.addColorStop(0, isBefore ? '#64748B' : '#0284C7');
+            skyGrad.addColorStop(1, isBefore ? '#CBD5E1' : '#BAE6FD');
+            ctx.fillStyle = skyGrad;
+            ctx.fillRect(0, 0, 900, 180);
+
+            // Collines & Palmiers tropicaux en arrière-plan
+            ctx.fillStyle = '#14532D';
+            ctx.beginPath();
+            ctx.moveTo(0, 175);
+            ctx.quadraticCurveTo(220, 95, 450, 150);
+            ctx.quadraticCurveTo(700, 85, 900, 145);
+            ctx.lineTo(900, 210);
+            ctx.lineTo(0, 210);
+            ctx.fill();
+
+            // Dessin spécifique selon l'architecture du chantier
+            ctx.save();
+            ctx.beginPath();
+            ctx.moveTo(40, 540);
+            ctx.lineTo(210, 130);
+            ctx.lineTo(690, 130);
+            ctx.lineTo(860, 540);
+            ctx.closePath();
+            ctx.clip();
+
+            // Couleur de base de la toiture
+            ctx.fillStyle = mainColor;
+            ctx.fillRect(0, 120, 900, 440);
+
+            // Ondulations de tôle ou tuiles
+            const lines = s.type === 'tiles' ? 36 : 48;
+            for (let i = -10; i < lines; i++) {
+                const xTop = 450 + (i - lines / 2) * 14;
+                const xBot = 450 + (i - lines / 2) * 28;
+                ctx.strokeStyle = i % 2 === 0 ? 'rgba(255,255,255,0.16)' : 'rgba(0,0,0,0.22)';
+                ctx.lineWidth = s.type === 'trapezoidal_rust' ? 6 : 4;
+                ctx.beginPath();
+                ctx.moveTo(xTop, 130);
+                ctx.lineTo(xBot, 540);
+                ctx.stroke();
+            }
+
+            // Rangées horizontales pour les tuiles
+            if (s.type === 'tiles') {
+                for (let y = 150; y < 540; y += 26) {
+                    ctx.strokeStyle = 'rgba(0,0,0,0.25)';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(900, y);
+                    ctx.stroke();
+                }
+            }
+
+            // Effets AVANT (Rouille, mousses noires, ou points de traitement sur les vis)
+            if (isBefore) {
+                if (s.beforeSpots) {
+                    for (let r = 0; r < 65; r++) {
+                        const rx = 120 + ((r * 97) % 660);
+                        const ry = 160 + ((r * 53) % 340);
+                        const rad = 14 + (r % 28);
+                        const grad = ctx.createRadialGradient(rx, ry, 2, rx, ry, rad);
+                        grad.addColorStop(0, s.beforeSpots);
+                        grad.addColorStop(1, 'rgba(0,0,0,0)');
+                        ctx.fillStyle = grad;
+                        ctx.beginPath();
+                        ctx.arc(rx, ry, rad, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+                if (s.rustDots || s.whiteDots) {
+                    const dotColor = s.whiteDots ? '#F8FAFC' : s.rustDots;
+                    for (let row = 190; row < 500; row += 55) {
+                        for (let col = 160; col < 740; col += 32) {
+                            ctx.fillStyle = dotColor;
+                            ctx.beginPath();
+                            ctx.arc(col, row, 5, 0, Math.PI * 2);
+                            ctx.fill();
+                        }
+                    }
+                }
+            } else {
+                // Effet APRÈS : Reflet brillant neuf Airless
+                const shine = ctx.createLinearGradient(0, 130, 900, 540);
+                shine.addColorStop(0, 'rgba(255,255,255,0.18)');
+                shine.addColorStop(0.5, 'rgba(255,255,255,0.03)');
+                shine.addColorStop(1, 'rgba(0,0,0,0.1)');
+                ctx.fillStyle = shine;
+                ctx.fillRect(0, 120, 900, 440);
+            }
+
+            // Faîtage central
+            ctx.strokeStyle = isBefore ? 'rgba(60,40,35,0.6)' : 'rgba(255,255,255,0.35)';
+            ctx.lineWidth = 18;
+            ctx.beginPath();
+            ctx.moveTo(450, 130);
+            ctx.lineTo(450, 540);
+            ctx.stroke();
+
+            ctx.restore();
+            return canvas.toDataURL('image/jpeg', 0.88);
+        }
+
+        function generateStackedCollageFromParts(beforeUrl, afterUrl, beforeHalf) {
+            return new Promise((resolve) => {
+                const imgB = new Image();
+                const imgA = new Image();
+                let loaded = 0;
+                const onBoth = () => {
+                    loaded++;
+                    if (loaded < 2) return;
+                    const c = document.createElement('canvas');
+                    c.width = 700;
+                    c.height = 900;
+                    const ctx = c.getContext('2d');
+                    const topImg = (beforeHalf === 'top') ? imgB : imgA;
+                    const botImg = (beforeHalf === 'top') ? imgA : imgB;
+                    ctx.drawImage(topImg, 0, 0, 700, 446);
+                    ctx.fillStyle = '#FFFFFF';
+                    ctx.fillRect(0, 446, 700, 8);
+                    ctx.drawImage(botImg, 0, 454, 700, 446);
+                    resolve(c.toDataURL('image/jpeg', 0.85));
+                };
+                imgB.onload = onBoth;
+                imgA.onload = onBoth;
+                imgB.src = beforeUrl;
+                imgA.src = afterUrl;
+            });
+        }
+
+        /* =========================================================
+           3. DÉCOUPAGE AUTOMATIQUE HAUT / BAS DES VRAIES PHOTOS DE L'UTILISATEUR
+           ========================================================= */
+        function splitVerticalCollageImage(imgElement, beforeHalf) {
+            const w = imgElement.naturalWidth || imgElement.width;
+            const h = imgElement.naturalHeight || imgElement.height;
+
+            // Découpe la moitié HAUT (0% à 49%) et la moitié BAS (51% à 100%) pour éliminer la bordure centrale
+            const halfH = Math.floor(h * 0.485);
+
+            const canvasTop = document.createElement('canvas');
+            canvasTop.width = w;
+            canvasTop.height = halfH;
+            canvasTop.getContext('2d').drawImage(imgElement, 0, 0, w, halfH, 0, 0, w, halfH);
+            const topDataUrl = canvasTop.toDataURL('image/jpeg', 0.9);
+
+            const canvasBot = document.createElement('canvas');
+            canvasBot.width = w;
+            canvasBot.height = halfH;
+            canvasBot.getContext('2d').drawImage(imgElement, 0, h - halfH, w, halfH, 0, 0, w, halfH);
+            const botDataUrl = canvasBot.toDataURL('image/jpeg', 0.9);
+
+            // Crée également une version complète optimisée pour la galerie et l'export HTML
+            const canvasFull = document.createElement('canvas');
+            const scale = Math.min(1, 1000 / Math.max(w, h));
+            canvasFull.width = Math.round(w * scale);
+            canvasFull.height = Math.round(h * scale);
+            canvasFull.getContext('2d').drawImage(imgElement, 0, 0, canvasFull.width, canvasFull.height);
+            const fullDataUrl = canvasFull.toDataURL('image/jpeg', 0.88);
+
+            return {
+                fullDataUrl,
+                beforeDataUrl: beforeHalf === 'top' ? topDataUrl : botDataUrl,
+                afterDataUrl: beforeHalf === 'top' ? botDataUrl : topDataUrl,
+                isRealPhoto: true
+            };
+        }
+
+        /* =========================================================
+           4. BASE DE DONNÉES LOCALE (INDEXEDDB) POUR SAUVEGARDER LES 10 PHOTOS HD
+           ========================================================= */
+        function openPhotoDB() {
+            return new Promise((resolve, reject) => {
+                const req = indexedDB.open('NetToitRenovDB_v2', 1);
+                req.onupgradeneeded = (e) => {
+                    const db = e.target.result;
+                    if (!db.objectStoreNames.contains('media')) {
+                        db.createObjectStore('media', { keyPath: 'key' });
+                    }
+                };
+                req.onsuccess = (e) => resolve(e.target.result);
+                req.onerror = (e) => reject(e);
+            });
+        }
+
+        async function saveMediaToDB(key, value) {
+            try {
+                const db = await openPhotoDB();
+                const tx = db.transaction('media', 'readwrite');
+                tx.objectStore('media').put({ key, value });
+            } catch (err) {
+                console.warn('IndexedDB non disponible:', err);
+            }
+        }
+
+        async function getMediaFromDB(key) {
+            try {
+                const db = await openPhotoDB();
+                return new Promise((resolve) => {
+                    const tx = db.transaction('media', 'readonly');
+                    const req = tx.objectStore('media').get(key);
+                    req.onsuccess = () => resolve(req.result ? req.result.value : null);
+                    req.onerror = () => resolve(null);
+                });
+            } catch (err) {
+                return null;
+            }
+        }
+
+        /* =========================================================
+           5. INITIALISATION HYBRIDE (FICHIERS LOCAUX -> INDEXEDDB -> SIMULATION HD)
+           ========================================================= */
+        function showUploadedLogo(imgEl) {
+            if (!imgEl || !imgEl.src) return;
+            imgEl.classList.remove('hidden');
+            const svgId = imgEl.id.replace('-img', '-svg');
+            const svgEl = document.getElementById(svgId);
+            if (svgEl) svgEl.classList.add('hidden');
+        }
+
+        function applyCustomLogoEverywhere(dataUrl) {
+            customLogoDataUrl = dataUrl;
+            ['nav-logo-img', 'hero-logo-img', 'footer-logo-img'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.src = dataUrl;
+                    showUploadedLogo(el);
+                }
+            });
+        }
+
+        async function initializeAllProjects() {
+            // 1. Vérifier si un logo est sauvegardé dans IndexedDB
+            const savedLogo = await getMediaFromDB('custom_logo');
+            if (savedLogo) applyCustomLogoEverywhere(savedLogo);
+
+            let realLoadedCount = 0;
+
+            for (let i = 0; i < realProjects.length; i++) {
+                const p = realProjects[i];
+
+                // A. Vérifier si l'utilisateur a déjà chargé cette photo dans IndexedDB
+                const savedProj = await getMediaFromDB('project_' + p.id);
+                if (savedProj && savedProj.beforeDataUrl && savedProj.afterDataUrl) {
+                    projectMediaStore[p.id] = savedProj;
+                    realLoadedCount++;
+                    continue;
+                }
+
+                // B. Tenter de charger le fichier direct (ex: "1000136013.jpg")
+                const directLoaded = await new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = () => {
+                        if (img.naturalWidth > 50) {
+                            const split = splitVerticalCollageImage(img, p.beforeHalf);
+                            projectMediaStore[p.id] = split;
+                            realLoadedCount++;
+                            resolve(true);
+                        } else {
+                            resolve(false);
+                        }
+                    };
+                    img.onerror = () => resolve(false);
+                    img.src = p.fileName;
+                });
+
+                if (directLoaded) continue;
+
+                // C. Repli automatique sur le rendu Canvas HD réaliste (Zéro icône d'image cassée !)
+                const beforeSim = generateRealisticRoofCanvas(p, 'before');
+                const afterSim = generateRealisticRoofCanvas(p, 'after');
+                const fullSim = await generateStackedCollageFromParts(beforeSim, afterSim, p.beforeHalf);
+                projectMediaStore[p.id] = {
+                    fullDataUrl: fullSim,
+                    beforeDataUrl: beforeSim,
+                    afterDataUrl: afterSim,
+                    isRealPhoto: false
+                };
+            }
+
+            updateSyncBannerStatus(realLoadedCount);
+            renderProjectTabsAndGrid();
+            loadProject(0);
+            updateHeroShowcase();
+        }
+
+        function updateHeroShowcase() {
+            // Affiche le Chantier #7 (Maison plain-pied verte) ou #1 dans le cadre Hero
+            const heroMedia = projectMediaStore[7] || projectMediaStore[1];
+            const heroImg = document.getElementById('hero-showcase-img');
+            if (heroImg && heroMedia) {
+                heroImg.src = heroMedia.fullDataUrl;
+            }
+        }
+
+        function updateSyncBannerStatus(realCount) {
+            const statusEl = document.getElementById('photo-sync-status');
+            if (!statusEl) return;
+            if (realCount === 9) {
+                statusEl.innerHTML = `<strong class="text-emerald-300"><i class="fa-solid fa-circle-check mr-1"></i>Vos 9 photos Avant/Après sont actives et sauvegardées !</strong> Vous pouvez exporter votre site complet prêt à publier.`;
+            } else if (realCount > 0) {
+                statusEl.innerHTML = `<strong class="text-emerald-300">${realCount}/9 photos réelles chargées.</strong> Cliquez sur le bouton vert pour ajouter d'autres photos en 1 clic.`;
+            }
+        }
+
+        /* =========================================================
+           6. IMPORTATION EN 1 SEUL CLIC DES 10 PHOTOS DEPUIS TÉLÉPHONE / PC
+           ========================================================= */
+        async function handleBulkPhotoUpload(event) {
+            const files = Array.from(event.target.files || []);
+            if (!files.length) return;
+
+            const statusEl = document.getElementById('photo-sync-status');
+            statusEl.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-1.5 text-emerald-300"></i><strong>Traitement et découpage automatique Avant/Après en cours...</strong>`;
+
+            let nextProjectSlot = 0;
+
+            for (const file of files) {
+                const dataUrl = await new Promise((resolve) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => resolve(e.target.result);
+                    reader.readAsDataURL(file);
+                });
+
+                const img = await new Promise((resolve) => {
+                    const i = new Image();
+                    i.onload = () => resolve(i);
+                    i.src = dataUrl;
+                });
+
+                const ratio = img.naturalWidth / img.naturalHeight;
+
+                // 1. Reconnaissance automatique par nom de fichier exact (ex: 1000136013.jpg)
+                const matchedProjIndex = realProjects.findIndex(p => file.name.includes(p.fileName.replace('.jpg', '')));
+
+                if (file.name.includes('1000069960') || (ratio > 0.82 && ratio < 1.25 && matchedProjIndex === -1 && files.length > 1)) {
+                    // C'est le logo (format carré) !
+                    applyCustomLogoEverywhere(dataUrl);
+                    await saveMediaToDB('custom_logo', dataUrl);
+                    continue;
+                }
+
+                // 2. C'est une photo Avant/Après (montage vertical Haut/Bas)
+                let targetIdx = matchedProjIndex !== -1 ? matchedProjIndex : nextProjectSlot;
+                if (targetIdx >= realProjects.length) targetIdx = targetIdx % realProjects.length;
+                nextProjectSlot++;
+
+                const proj = realProjects[targetIdx];
+                const splitMedia = splitVerticalCollageImage(img, proj.beforeHalf);
+                projectMediaStore[proj.id] = splitMedia;
+                await saveMediaToDB('project_' + proj.id, splitMedia);
+            }
+
+            const totalReal = Object.values(projectMediaStore).filter(m => m.isRealPhoto).length;
+            updateSyncBannerStatus(totalReal);
+            renderProjectTabsAndGrid();
+            loadProject(currentProjectIndex);
+            updateHeroShowcase();
+        }
+
+        // Remplacement individuel de la photo du chantier actif
+        async function handleSingleProjectUpload(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+
+            const dataUrl = await new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onload = (e) => resolve(e.target.result);
+                reader.readAsDataURL(file);
+            });
+
+            const img = await new Promise((resolve) => {
+                const i = new Image();
+                i.onload = () => resolve(i);
+                i.src = dataUrl;
+            });
+
+            const proj = realProjects[currentProjectIndex];
+            const splitMedia = splitVerticalCollageImage(img, proj.beforeHalf);
+            projectMediaStore[proj.id] = splitMedia;
+            await saveMediaToDB('project_' + proj.id, splitMedia);
+
+            const totalReal = Object.values(projectMediaStore).filter(m => m.isRealPhoto).length;
+            updateSyncBannerStatus(totalReal);
+            renderProjectTabsAndGrid();
+            loadProject(currentProjectIndex);
+            updateHeroShowcase();
+        }
+
+        // Bouton pour inverser Haut / Bas (Avant / Après) sur le chantier actif en 1 clic
+        async function invertCurrentProjectOrder() {
+            const proj = realProjects[currentProjectIndex];
+            proj.beforeHalf = (proj.beforeHalf === 'top') ? 'bottom' : 'top';
+            proj.afterHalf = (proj.beforeHalf === 'top') ? 'bottom' : 'top';
+
+            const media = projectMediaStore[proj.id];
+            if (media) {
+                const temp = media.beforeDataUrl;
+                media.beforeDataUrl = media.afterDataUrl;
+                media.afterDataUrl = temp;
+                await saveMediaToDB('project_' + proj.id, media);
+            }
+            renderProjectTabsAndGrid();
+            loadProject(currentProjectIndex);
+        }
+
+        /* =========================================================
+           7. AFFICHAGE DU COMPARATEUR AVANT/APRÈS ET DE LA GALERIE DES 9 CHANTIERS
+           ========================================================= */
+        const baSlider = document.getElementById('ba-slider');
+        const baBeforeClip = document.getElementById('ba-before-clip');
+        const baBeforeImg = document.getElementById('ba-before-img');
+        const baAfterImg = document.getElementById('ba-after-img');
+        const baDivider = document.getElementById('ba-divider');
+
+        function syncBeforeWidth() {
+            if (baSlider && baBeforeImg) {
+                baBeforeImg.style.width = baSlider.offsetWidth + 'px';
+            }
+        }
+
+        function setSliderPos(percent) {
+            const clamped = Math.max(4, Math.min(96, percent));
+            baBeforeClip.style.width = clamped + '%';
+            baDivider.style.left = clamped + '%';
+        }
+
+        function renderProjectTabsAndGrid() {
+            const tabsContainer = document.getElementById('project-tabs');
+            const gridContainer = document.getElementById('gallery-grid');
+
+            tabsContainer.innerHTML = realProjects.map((p, idx) => `
+                <button type="button" onclick="loadProject(${idx})" id="proj-tab-${idx}" class="shrink-0 px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm border transition-all flex items-center gap-2 ${idx === currentProjectIndex ? 'bg-brand-green text-white border-brand-green shadow-md' : 'bg-white text-brand-charcoal border-slate-200 hover:border-brand-green'}">
+                    <span>${p.shortLabel}</span>
+                </button>
+            `).join('');
+
+            gridContainer.innerHTML = realProjects.map((p, idx) => {
+                const media = projectMediaStore[p.id] || {};
+                return `
+                <div class="pro-card rounded-2xl overflow-hidden bg-white flex flex-col justify-between group">
+                    <div>
+                        <div class="relative aspect-[4/4.6] bg-slate-900 overflow-hidden cursor-pointer" onclick="openLightbox(${idx})">
+                            <img src="${media.fullDataUrl || ''}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <!-- Dynamic Top Label -->
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[11px] font-heading font-bold text-white shadow ${p.beforeHalf === 'top' ? 'bg-red-600/95' : 'bg-brand-green/95'}">
+                                HAUT : ${p.beforeHalf === 'top' ? 'AVANT' : 'APRÈS'}
+                            </span>
+
+                            <!-- Dynamic Bottom Label -->
+                            <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg text-[11px] font-heading font-bold text-white shadow ${p.afterHalf === 'bottom' ? 'bg-brand-green/95' : 'bg-red-600/95'}">
+                                BAS : ${p.afterHalf === 'bottom' ? 'APRÈS' : 'AVANT'}
+                            </span>
+
+                            <div class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/95 text-brand-charcoal flex items-center justify-center shadow-lg group-hover:bg-brand-green group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-expand text-sm"></i>
+                            </div>
+                        </div>
+
+                        <div class="p-5">
+                            <div class="text-[11px] font-bold uppercase text-brand-green mb-1">${p.tag}</div>
+                            <h4 class="font-heading font-extrabold text-lg text-brand-charcoal leading-snug mb-2">${p.title}</h4>
+                            <p class="text-xs text-slate-600 line-clamp-2">${p.desc}</p>
+                        </div>
+                    </div>
+
+                    <div class="px-5 pb-5 pt-2 flex items-center gap-2">
+                        <button type="button" onclick="loadProjectAndScroll(${idx})" class="flex-1 py-2.5 px-3 rounded-xl bg-brand-mint hover:bg-brand-green text-brand-greenDark hover:text-white font-heading font-bold text-xs transition-all flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                            <span>Comparer avec le curseur</span>
+                        </button>
+                        <button type="button" onclick="openLightbox(${idx})" class="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-brand-charcoal font-bold text-xs transition-all" title="Zoom plein écran">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        function loadProject(index) {
+            currentProjectIndex = index;
+            const p = realProjects[index];
+            const media = projectMediaStore[p.id];
+
+            if (media) {
+                baBeforeImg.src = media.beforeDataUrl;
+                baAfterImg.src = media.afterDataUrl;
+            }
+
+            syncBeforeWidth();
+            setSliderPos(50);
+
+            document.getElementById('active-proj-tag').textContent = p.tag;
+            document.getElementById('active-proj-counter').textContent = `${index + 1} / ${realProjects.length}`;
+            document.getElementById('active-proj-title').textContent = p.title;
+            document.getElementById('active-proj-desc').textContent = p.desc;
+            document.getElementById('replace-idx-label').textContent = index + 1;
+
+            document.getElementById('active-proj-bullets').innerHTML = p.bullets.map(b => `
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-brand-green mt-1 shrink-0"></i>
+                    <span>${b}</span>
+                </li>
+            `).join('');
+
+            realProjects.forEach((_, i) => {
+                const btn = document.getElementById(`proj-tab-${i}`);
+                if (!btn) return;
+                if (i === index) {
+                    btn.className = "shrink-0 px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm border transition-all flex items-center gap-2 bg-brand-green text-white border-brand-green shadow-md";
+                } else {
+                    btn.className = "shrink-0 px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm border transition-all flex items-center gap-2 bg-white text-brand-charcoal border-slate-200 hover:border-brand-green";
+                }
+            });
+        }
+
+        function loadProjectAndScroll(index) {
+            loadProject(index);
+            document.getElementById('ba-slider').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function nextProject() {
+            loadProject((currentProjectIndex + 1) % realProjects.length);
+        }
+
+        function prevProject() {
+            loadProject((currentProjectIndex - 1 + realProjects.length) % realProjects.length);
+        }
+
+        /* =========================================================
+           8. INTERACTION TACTILE & SOURIS DU CURSEUR AVANT/APRÈS
+           ========================================================= */
+        let isDraggingSlider = false;
+
+        function handleSliderMove(clientX) {
+            const rect = baSlider.getBoundingClientRect();
+            const pos = ((clientX - rect.left) / rect.width) * 100;
+            setSliderPos(pos);
+        }
+
+        baSlider.addEventListener('mousedown', (e) => {
+            if (e.target.closest('button')) return;
+            isDraggingSlider = true;
+            handleSliderMove(e.clientX);
+        });
+        window.addEventListener('mousemove', (e) => {
+            if (!isDraggingSlider) return;
+            handleSliderMove(e.clientX);
+        });
+        window.addEventListener('mouseup', () => { isDraggingSlider = false; });
+
+        baSlider.addEventListener('touchstart', (e) => {
+            if (e.target.closest('button')) return;
+            isDraggingSlider = true;
+            handleSliderMove(e.touches[0].clientX);
+        }, { passive: true });
+        baSlider.addEventListener('touchmove', (e) => {
+            if (!isDraggingSlider) return;
+            handleSliderMove(e.touches[0].clientX);
+        }, { passive: true });
+        baSlider.addEventListener('touchend', () => { isDraggingSlider = false; });
+
+        window.addEventListener('resize', syncBeforeWidth);
+
+        /* =========================================================
+           9. LIGHTBOX PLEIN ÉCRAN & EXPORT DU SITE COMPLET AUTONOME (.HTML)
+           ========================================================= */
+        function openLightbox(index) {
+            const p = realProjects[index];
+            const media = projectMediaStore[p.id];
+            document.getElementById('lightbox-title').textContent = p.title;
+            document.getElementById('lightbox-img').src = media ? media.fullDataUrl : '';
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+
+        function openCurrentInLightbox() {
+            openLightbox(currentProjectIndex);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // Permet de télécharger un fichier HTML unique contenant toutes les photos encodées en Base64 !
+        function exportStandaloneWebsite() {
+            const docClone = document.documentElement.cloneNode(true);
+            // Masquer la barre d'importation technique dans la version finale exportée
+            const syncBar = docClone.querySelector('#photo-sync-bar');
+            if (syncBar) syncBar.remove();
+
+            // Injecter les données Base64 directement dans le script pour que le fichier téléchargé soit 100% autonome
+            const embeddedScript = document.createElement('script');
+            embeddedScript.textContent = `
+                window.__PRELOADED_MEDIA__ = ${JSON.stringify(projectMediaStore)};
+                window.__PRELOADED_LOGO__ = ${JSON.stringify(customLogoDataUrl)};
+                window.addEventListener('DOMContentLoaded', () => {
+                    if (window.__PRELOADED_LOGO__) applyCustomLogoEverywhere(window.__PRELOADED_LOGO__);
+                    if (window.__PRELOADED_MEDIA__) {
+                        Object.assign(projectMediaStore, window.__PRELOADED_MEDIA__);
+                        renderProjectTabsAndGrid();
+                        loadProject(0);
+                        updateHeroShowcase();
+                    }
+                });
+            `;
+            docClone.querySelector('body').appendChild(embeddedScript);
+
+            const htmlContent = '<!DOCTYPE html>\n' + docClone.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'site-nettoit-renov-martinique.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        /* =========================================================
+           10. SIMULATEUR DE DEVIS WHATSAPP & EMAIL
+           ========================================================= */
+        let selectedService = "Peinture Toiture Airless & Anti-Rouille";
+        let selectedColor = "Rouge Tuile / Terracotta";
+        const surfaceSlider = document.getElementById('surface-slider');
+        const surfaceDisplay = document.getElementById('surface-display');
+
+        surfaceSlider.addEventListener('input', (e) => {
+            const val = e.target.value;
+            surfaceDisplay.textContent = val >= 500 ? "500+ m²" : val + " m²";
+        });
+
+        function selectService(btnEl, serviceName) {
+            selectedService = serviceName;
+            document.querySelectorAll('.service-choice').forEach(b => {
+                b.className = "service-choice text-left p-4 rounded-2xl border-2 border-slate-200 bg-slate-50 hover:border-brand-green/50 transition-all flex items-center gap-3.5";
+            });
+            btnEl.className = "service-choice text-left p-4 rounded-2xl border-2 border-brand-green bg-brand-mint/70 transition-all flex items-center gap-3.5";
+        }
+
+        function selectColor(btnEl, colorName) {
+            selectedColor = colorName;
+            document.querySelectorAll('.color-choice').forEach(b => {
+                b.className = "color-choice p-3 rounded-xl border-2 border-slate-200 bg-white hover:border-brand-green/50 flex items-center gap-2.5 text-left text-xs sm:text-sm font-bold text-brand-charcoal";
+            });
+            btnEl.className = "color-choice p-3 rounded-xl border-2 border-brand-green bg-brand-mint/50 flex items-center gap-2.5 text-left text-xs sm:text-sm font-bold text-brand-charcoal";
+        }
+
+        function gatherFormData() {
+            const surface = surfaceSlider.value >= 500 ? "Plus de 500 m²" : surfaceSlider.value + " m²";
+            const commune = document.getElementById('client-commune').value;
+            const name = document.getElementById('client-name').value.trim() || "Client Martinique";
+            const phone = document.getElementById('client-phone').value.trim() || "Non renseigné";
+            const notes = document.getElementById('client-notes').value.trim() || "Aucune précision";
+            return { surface, commune, name, phone, notes };
+        }
+
+        function sendViaWhatsApp() {
+            const data = gatherFormData();
+            const text = 
+                `Bonjour Net'Toit Rénov,\n\n` +
+                `Je souhaite un devis gratuit pour ma toiture en Martinique :\n` +
+                `• *Prestation :* ${selectedService}\n` +
+                `• *Teinte / Finition :* ${selectedColor}\n` +
+                `• *Surface estimée :* ${data.surface}\n` +
+                `• *Commune :* ${data.commune}\n` +
+                `• *Nom :* ${data.name}\n` +
+                `• *Téléphone :* ${data.phone}\n` +
+                `• *Précisions :* ${data.notes}`;
+
+            const fb = document.getElementById('form-feedback');
+            fb.textContent = "Ouverture de WhatsApp vers le 06 96 89 09 51...";
+            fb.classList.remove('hidden');
+            window.open(`https://wa.me/596696890951?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function sendViaEmail() {
+            const data = gatherFormData();
+            const subject = `Demande de Devis Net'Toit Rénov - ${data.commune} (${data.surface})`;
+            const body = 
+                `Bonjour Alfred et Mathias (Net'Toit Rénov),\n\n` +
+                `Voici ma demande de devis depuis votre site internet :\n\n` +
+                `- Prestation : ${selectedService}\n` +
+                `- Teinte / Finition souhaitée : ${selectedColor}\n` +
+                `- Surface approximative : ${data.surface}\n` +
+                `- Commune : ${data.commune}\n` +
+                `- Nom : ${data.name}\n` +
+                `- Téléphone : ${data.phone}\n` +
+                `- Détails : ${data.notes}\n\n` +
+                `Cordialement,`;
+
+            const fb = document.getElementById('form-feedback');
+            fb.textContent = "Ouverture de votre messagerie vers nettoitrenov@gmail.com...";
+            fb.classList.remove('hidden');
+            window.location.href = `mailto:nettoitrenov@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        window.onload = function () {
+            initializeAllProjects();
+
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => observer.observe(el));
+        };
+    </script>
+</body>
+</html>
